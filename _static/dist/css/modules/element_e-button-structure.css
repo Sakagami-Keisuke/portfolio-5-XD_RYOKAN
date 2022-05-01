@@ -1,6 +1,19 @@
+@charset "UTF-8";
 .button {
   width: 170px;
   height: 54px;
   background-color: #978F10;
+}
+
+.page-junp-btn {
+  width: 200px;
+  height: 56px;
+  border: 1px solid #707070;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  line-height: 56px;
+  text-align: center;
 }
 /*# sourceMappingURL=element_e-button-structure.css.map */

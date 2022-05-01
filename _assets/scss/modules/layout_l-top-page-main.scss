@@ -111,67 +111,60 @@
     }
 }
 
-
-.fv-msg__line01{
+.fv-msg__line01 {
     top: 64px;
     right: 488px;
     font-size: 22px;
     letter-spacing: 22px;
 }
-.fv-msg__line02{
+.fv-msg__line02 {
     top: 149px;
     right: 549px;
     font-size: 22px;
-        letter-spacing: 22px;
+    letter-spacing: 22px;
 }
-.fv-msg__line03{
+.fv-msg__line03 {
     top: 149px;
     right: 695px;
 }
-.fv-msg__line04{
+.fv-msg__line04 {
     top: 149px;
     right: 733px;
 }
-.fv-msg__line05{
+.fv-msg__line05 {
     top: 149px;
     right: 771px;
 }
-.fv-msg__line06{
+.fv-msg__line06 {
     top: 149px;
     right: 905px;
 }
-.fv-msg__line07{
+.fv-msg__line07 {
     top: 149px;
     right: 943px;
 }
-.fv-msg__line08{
+.fv-msg__line08 {
     top: 149px;
     right: 981px;
 }
-.fv-msg__line09{
+.fv-msg__line09 {
     top: 149px;
     right: 1115px;
 }
-.fv-msg__line10{
+.fv-msg__line10 {
     top: 149px;
     right: 1153px;
 }
-.fv-msg__line11{
+.fv-msg__line11 {
     top: 149px;
     right: 1191px;
 }
-.fv-msg__line12{
+.fv-msg__line12 {
     top: 443px;
     right: 1325px;
     font-size: 22px;
     letter-spacing: 22px;
 }
-
-
-
-
-// ---------------------------------
-
 // ------ section 1 first view---------------------------
 
 // ------ section 2  feature ---------------------------
@@ -180,7 +173,6 @@
     width: 1920px;
     height: 2063px;
     margin: 0 auto;
-    // background-color: rgb(153, 156, 146);
 }
 
 // ---------------------------------
@@ -195,7 +187,205 @@
     justify-content: flex-start;
     align-items: center;
 
-    background-color: rgb(219, 235, 186);
+    background-color: #ffffff;
+}
+
+// ---------------------------------
+.l-feature01 {
+    width: 100%;
+    height: 545px;
+    margin-top: 105px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    // ---------------------------------
+
+    .l-feature-img-box01 {
+        overflow: hidden;
+        width: 1050px; /* トリミングしたい枠の幅 */
+        height: 10％; /* トリミングしたい枠の高さ */
+
+        // ---------------------------------
+
+        .feature-img01 {
+            width: 100%;
+            height: auto;
+            transform: translate(0%, -10%); //ずらし
+        }
+    }
+    // ---------------------------------
+
+    .l-feature-txt-box01 {
+        width: calc(1920px - 1050px);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // ---------------------------------
+
+        .feature-txt-strong01 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            padding-left: 137px;
+            font-size: 36px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 32px;
+            padding-left: 137px;
+        }
+        // ---------------------------------
+        .feature-txt01 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            font-size: 16px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 75px;
+            padding-left: 137px;
+        }
+    }
+}
+
+// ---------------------------------
+
+.l-feature02 {
+    width: 100%;
+    height: 545px;
+    margin-top: 122px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+    // ---------------------------------
+    .l-feature-img-box02 {
+        overflow: hidden;
+        width: 1050px; /* トリミングしたい枠の幅 */
+        height: 10％; /* トリミングしたい枠の高さ */
+
+        .feature-img02 {
+            width: 100%;
+            height: auto;
+            transform: translate(0%, -10%); //ずらし
+        }
+    }
+    // ---------------------------------
+    .l-feature-txt-box02 {
+        width: calc(1920px - 1050px);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        // ---------------------------------
+        .feature-txt-strong02 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            padding-left: 137px;
+            font-size: 36px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 32px;
+            padding-left: 210px;
+        }
+        // ---------------------------------
+        .feature-txt02 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            font-size: 16px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 75px;
+            padding-left: 174px;
+        }
+    }
+}
+
+// ---------------------------------
+.l-feature03 {
+    width: 100%;
+    height: 545px;
+    margin-top: 122px;
+    margin-bottom: 78px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    // ---------------------------------
+
+    .l-feature-img-box03 {
+        overflow: hidden;
+        width: 1050px; /* トリミングしたい枠の幅 */
+        height: 10％; /* トリミングしたい枠の高さ */
+
+        .feature-img03 {
+            width: 100%;
+            height: auto;
+            transform: translate(0%, -10%); //ずらし
+        }
+    }
+    // ---------------------------------
+    .l-feature-txt-box03 {
+        width: calc(1920px - 1050px);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // ---------------------------------
+        .feature-txt-strong03 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            padding-left: 137px;
+            font-size: 36px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 32px;
+            padding-left: 137px;
+        }
+        // ---------------------------------
+        .feature-txt03 {
+            font-family: "游明朝", "YuMincho", serif;
+            font-weight: normal;
+            color: #000000;
+            font-size: 16px;
+            letter-spacing: 5px;
+            line-height: 1.5;
+
+            padding-top: 75px;
+            padding-left: 137px;
+        }
+    }
+}
+
+// ---------------------------------
+.page-junp-btn01 {
+    margin-top: 75px;
+    margin-left: 137px;
+}
+// ---------------------------------
+.page-junp-btn02 {
+    margin-top: 75px;
+    margin-left: 262px;
+}
+// ---------------------------------
+.page-junp-btn03 {
+    margin-top: 75px;
+    margin-left: 137px;
 }
 
 // ------ section 2  feature ---------------------------

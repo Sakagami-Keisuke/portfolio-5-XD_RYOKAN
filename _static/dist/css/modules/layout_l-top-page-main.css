@@ -166,7 +166,170 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(219, 235, 186);
+  background-color: #ffffff;
+}
+
+.l-feature01 {
+  width: 100%;
+  height: 545px;
+  margin-top: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.l-feature01 .l-feature-img-box01 {
+  overflow: hidden;
+  width: 1050px;
+  /* トリミングしたい枠の幅 */
+  height: 10％;
+  /* トリミングしたい枠の高さ */
+}
+.l-feature01 .l-feature-img-box01 .feature-img01 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -10%);
+}
+.l-feature01 .l-feature-txt-box01 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.l-feature01 .l-feature-txt-box01 .feature-txt-strong01 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-left: 137px;
+}
+.l-feature01 .l-feature-txt-box01 .feature-txt01 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 75px;
+  padding-left: 137px;
+}
+
+.l-feature02 {
+  width: 100%;
+  height: 545px;
+  margin-top: 122px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.l-feature02 .l-feature-img-box02 {
+  overflow: hidden;
+  width: 1050px;
+  /* トリミングしたい枠の幅 */
+  height: 10％;
+  /* トリミングしたい枠の高さ */
+}
+.l-feature02 .l-feature-img-box02 .feature-img02 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -10%);
+}
+.l-feature02 .l-feature-txt-box02 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.l-feature02 .l-feature-txt-box02 .feature-txt-strong02 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-left: 210px;
+}
+.l-feature02 .l-feature-txt-box02 .feature-txt02 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 75px;
+  padding-left: 174px;
+}
+
+.l-feature03 {
+  width: 100%;
+  height: 545px;
+  margin-top: 122px;
+  margin-bottom: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.l-feature03 .l-feature-img-box03 {
+  overflow: hidden;
+  width: 1050px;
+  /* トリミングしたい枠の幅 */
+  height: 10％;
+  /* トリミングしたい枠の高さ */
+}
+.l-feature03 .l-feature-img-box03 .feature-img03 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -10%);
+}
+.l-feature03 .l-feature-txt-box03 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.l-feature03 .l-feature-txt-box03 .feature-txt-strong03 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-left: 137px;
+}
+.l-feature03 .l-feature-txt-box03 .feature-txt03 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding-top: 75px;
+  padding-left: 137px;
+}
+
+.page-junp-btn01 {
+  margin-top: 75px;
+  margin-left: 137px;
+}
+
+.page-junp-btn02 {
+  margin-top: 75px;
+  margin-left: 262px;
+}
+
+.page-junp-btn03 {
+  margin-top: 75px;
+  margin-left: 137px;
 }
 
 .l-plan {

@@ -17,10 +17,13 @@ _gulp % npx gulp
 % git remote add origin https://github.com/Sakagami-Keisuke/portfolio-5-XD_RYOKAN.git
 
 % git ls-remote --get-url
+<!-- https://git.command-ref.com/cmd-git-ls-remote.html -->
 % git remote -v
 
-
-
+% git add .
+% git status
+% git commit -m "******"
+% git push origin master
 
 
 ```
