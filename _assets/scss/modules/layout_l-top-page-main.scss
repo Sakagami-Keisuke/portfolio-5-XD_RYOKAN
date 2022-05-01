@@ -1,0 +1,279 @@
+//背景ボード
+.l-top-page-main {
+    width: 100vw;
+    height: 8000px;
+
+    background-color: #dedada;
+}
+
+// ------ section 1 first view---------------------------
+
+.first-view {
+    position: static;
+    width: 1920px;
+    height: 1760px;
+    margin: 0 auto;
+    background-color: rgb(98, 93, 217);
+}
+
+// ---------------------------------
+
+.l-fv-inner {
+    position: static;
+    width: 1920px;
+    height: 1760px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    // background-color: rgb(234, 186, 186);
+}
+
+// ---------------------------------
+
+.l-fvーinner__img-container {
+    z-index: 1;
+    width: 1920px;
+    height: 1079px;
+    margin: 0 auto;
+
+    display: flex;
+    position: relative;
+}
+
+// ---------------------------------
+
+.main-bg {
+    width: 100%;
+    height: auto;
+}
+
+// ---------------------------------
+
+.main-bng__right-txt {
+    position: absolute;
+    top: 362px;
+    right: 508px;
+
+    writing-mode: vertical-rl;
+    font-size: 34px;
+    font-family: "游明朝", "YuMincho", serif;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 10px;
+}
+
+.main-bng__left-txt {
+    position: absolute;
+    top: 362px;
+    right: 593px;
+
+    writing-mode: vertical-rl;
+    font-size: 34px;
+    font-family: "游明朝", "YuMincho", serif;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 10px;
+}
+
+// ---------------------------------
+
+.l-fvーinner__msg-container {
+    position: relative;
+    width: 1920px;
+    height: 681px;
+    margin: 0 auto;
+    background-color: #f4b9bf;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    font-size: 16px;
+    font-family: "游明朝", "YuMincho", serif;
+    font-weight: normal;
+    color: #000000;
+    letter-spacing: 8px;
+
+    //背景
+    .fv-msg-color {
+        display: block;
+        //なぜかずれる
+        width: 1922px;
+        height: 681px;
+    }
+
+    span {
+        position: absolute;
+        writing-mode: vertical-rl;
+    }
+}
+
+
+.fv-msg__line01{
+    top: 64px;
+    right: 488px;
+    font-size: 22px;
+    letter-spacing: 22px;
+}
+.fv-msg__line02{
+    top: 149px;
+    right: 549px;
+    font-size: 22px;
+        letter-spacing: 22px;
+}
+.fv-msg__line03{
+    top: 149px;
+    right: 695px;
+}
+.fv-msg__line04{
+    top: 149px;
+    right: 733px;
+}
+.fv-msg__line05{
+    top: 149px;
+    right: 771px;
+}
+.fv-msg__line06{
+    top: 149px;
+    right: 905px;
+}
+.fv-msg__line07{
+    top: 149px;
+    right: 943px;
+}
+.fv-msg__line08{
+    top: 149px;
+    right: 981px;
+}
+.fv-msg__line09{
+    top: 149px;
+    right: 1115px;
+}
+.fv-msg__line10{
+    top: 149px;
+    right: 1153px;
+}
+.fv-msg__line11{
+    top: 149px;
+    right: 1191px;
+}
+.fv-msg__line12{
+    top: 443px;
+    right: 1325px;
+    font-size: 22px;
+    letter-spacing: 22px;
+}
+
+
+
+
+// ---------------------------------
+
+// ------ section 1 first view---------------------------
+
+// ------ section 2  feature ---------------------------
+
+.l-feature {
+    width: 1920px;
+    height: 2063px;
+    margin: 0 auto;
+    // background-color: rgb(153, 156, 146);
+}
+
+// ---------------------------------
+
+.l-feature-inner {
+    width: 1920px;
+    height: 2063px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(219, 235, 186);
+}
+
+// ------ section 2  feature ---------------------------
+
+// ------ section 3  plan   ---------------------------
+
+.l-plan {
+    width: 1920px;
+    height: 775px;
+    margin: 0 auto;
+    // background-color: rgb(153, 156, 146);
+}
+
+// ---------------------------------
+
+.l-plan-inner {
+    width: 1920px;
+    height: 775px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(241, 174, 91);
+}
+// ------ section 3  plan   ---------------------------
+
+// ------ section 4 notice    ---------------------------
+.l-notice {
+    width: 1920px;
+    height: 757px;
+    margin: 0 auto;
+    // background-color: rgb(153, 156, 146);
+}
+
+// ---------------------------------
+
+.l-notice-inner {
+    width: 1920px;
+    height: 757px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(245, 234, 221);
+}
+// ------ section 4 notice    ---------------------------
+
+// ------ section 5 access  ---------------------------
+.l-access {
+    width: 1920px;
+    height: 1381px;
+    margin: 0 auto;
+    // background-color: rgb(153, 156, 146);
+}
+
+// ---------------------------------
+
+.l-access-inner {
+    width: 1920px;
+    height: 1381px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(221, 239, 245);
+}
+
+// ------ section 5 access  ---------------------------
+
+// ------ section 6           ---------------------------
+
+// ------ section 6           ---------------------------

@@ -1,0 +1,67 @@
+// ブレイクポイント=============================================
+// ===========================================================
+$pc_l: 1367px;  // 1367px〜      外部モニタ
+$pc:   1366px;   // 1025~1366px   デザインサイズ指定
+$tab:  1024px;   // 480px~1024px  タブレット
+$sp:    480px;   // 375px~479px   スマホ
+// ブレイクポイント=============================================
+// ===========================================================
+@mixin pc-l($pcl) {
+  /* 1920px 以上 */
+  @media (min-width: ($pcl)) {
+    @content;
+  }
+}
+// ===========================================================
+@mixin pc($pc) {
+  /* $** pxを含まずそれより小さい */
+  @media not all and (min-width: ($pc)) {
+    @content;
+  }
+}
+// ===========================================================
+@mixin tab($tab) {
+  /* $** pxを含まずそれより小さい */
+  @media not all and (min-width: ($tab)) {
+    @content;
+  }
+}
+// ===========================================================
+@mixin sp($sp) {
+  /* $** pxを含まずそれより小さい */
+  @media not all and (min-width: ($sp)) {
+    @content;
+  }
+}
+// ===========================================================
+
+
+
+//レスポンシブ PC $upper~$lowerのPX範囲で可変===========================
+@function clampPc($upper, $lower) {
+  $minVW: 1025;
+  $maxVW: 1366;
+  $val_min: $lower * 1px;
+  $val_vw: round(calc($upper / $maxVW) * 100);
+  $val_max: $upper * 1px;
+  @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+}
+//レスポンシブ tab $upper~$lowerのPX範囲で可変===========================
+@function clampTab($upper, $lower) {
+  $minVW: 600;
+  $maxVW: 1024;
+  $val_min: $lower * 1px;
+  $val_vw: round(calc($upper / $maxVW) * 100);
+  $val_max: $upper * 1px;
+  @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+}
+//レスポンシブ sp $upper~$lowerのPX範囲で可変===========================
+@function clampSp($upper, $lower) {
+  $minVW: 375;
+  $maxVW: 599;
+  $val_min: $lower * 1px;
+  $val_vw: round(calc($upper / $maxVW) * 100);
+  $val_max: $upper * 1px;
+  @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+}
+

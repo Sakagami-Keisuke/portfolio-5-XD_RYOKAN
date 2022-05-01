@@ -1,0 +1,23 @@
+//基盤
+@use "./foundation_reset";             //reset css
+@use "./foundation_base";              //html,body,font...
+@use "./foundation_variable";          //変数
+@use "./foundation_mixin";             //mixin
+
+//レイアウト
+@use "./layout_l-header";              //header
+@use "./layout_l-footer";              //footer
+@use "./layout_l-wrapper";             //wrapper
+@use "./layout_l-top-page-main";       //top page body
+
+//エレメント
+@use "./element_e-button-structure";   //button structure(構造)
+@use "./element_e-heading-structure";  //h1 h2 h3.. structure(構造)
+
+//コンポーネント
+
+@use "./component_c_card";              //card コンポーネント 複数エレメントのまとまり
+@use "./component_c_swiper";            //swiper コンポーネント 複数エレメントのまとまり
+
+@use "./component_c_first-view";        //ファーストビュー コンポーネント 複数エレメントのまとまり
+

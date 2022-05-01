@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face {
+  font-family: “Times New Roman”;
+  src: url(../fonts/Times-New-Romance.ttf) format("woff");
+}
+/* Times New Roman */
+.body {
+  /* 游明朝を設定する */
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  /* 游ゴシック体 Light/Medium */
+  /* 游ゴシック体 Regular/Medium */
+  /* 游ゴシック体 Bold */
+  /* 游明朝体 Light/Medium */
+  /* 游明朝体 Regular/Medium */
+  /* 游明朝体 Demibold */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  width: 100vw;
+  color: #444444;
+  background-color: rgb(203, 142, 142);
+  font-family: "Noto Sans JP", sans-serif;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.body img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+body * {
+  box-sizing: inherit;
+  /* box-sizingの値は継承されないので明示的に設定 */
+  position: relative;
+  /* 親の親などスキップする際はstaticで明示的に行う */
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=foundation_base.css.map */

@@ -1,0 +1,122 @@
+@use "foundation_mixin";
+
+@font-face {
+    font-family: “Times New Roman”;
+    src: url(../fonts/Times-New-Romance.ttf) format("woff");
+}
+/* Times New Roman */
+// font-family: "Times New Roman", sans-serif;
+
+// 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.body {
+    /* 游明朝を設定する */
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ",
+        Meiryo, "ＭＳ ゴシック", sans-serif;
+
+    /* 游ゴシック体 Light/Medium */
+    // font-family: "游ゴシック Light", "游ゴシック", "YuGothic", sans-serif;
+    // font-weight: 200;
+
+    /* 游ゴシック体 Regular/Medium */
+    // font-family: "游ゴシック", "YuGothic", sans-serif;
+    // font-weight: normal;
+
+    /* 游ゴシック体 Bold */
+    // font-family: "游ゴシック", "YuGothic", sans-serif;
+    // font-weight: bold;
+
+    /* 游明朝体 Light/Medium */
+    // font-family: "游明朝 Light", "游明朝", "YuMincho", serif;
+    // font-weight: 200;
+
+    /* 游明朝体 Regular/Medium */
+    // font-family: "游明朝", "YuMincho", serif;
+    // font-weight: normal;
+
+    /* 游明朝体 Demibold */
+    // font-family: "游明朝", "YuMincho", serif;
+    // font-weight: bold;
+
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    box-sizing: border-box;
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    margin: 0;
+    padding: 0;
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // 文字詰め
+    // palt
+    // 約物も含めすべての文字間が詰まる。
+    // pkna
+    // 句読点やかぎ括弧など一部の約物は文字詰めされず全角のままになる。
+    // pkna
+    // ひらがなとカタカナのみ文字詰めされる。約物や全角英数字は文字詰めされない。
+    -webkit-font-feature-settings: "palt";
+    font-feature-settings: "palt";
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    // スマホ横向き時の文字拡大防止
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+    // 　　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    width: 100vw;
+    color: #444444;
+    background-color: rgb(203, 142, 142);
+    font-family: "Noto Sans JP", sans-serif;
+
+    /* pc 1367px以上  */
+    @include foundation_mixin.pc-l(1367px) {
+    }
+
+    /* PC */
+    @include foundation_mixin.pc(1366px) {
+    }
+
+    /* タブレット */
+    @include foundation_mixin.tab(1025px) {
+    }
+
+    /* スマートフォン */
+    @include foundation_mixin.sp(600px) {
+    }
+}
+
+// bodyに書いておくだけだと全体適用にならないので、body * で子要素に引き継ぐ
+body * {
+    box-sizing: inherit; /* box-sizingの値は継承されないので明示的に設定 */
+
+    position: relative; /* 親の親などスキップする際はstaticで明示的に行う */
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit; //親要素の値を継承する
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
