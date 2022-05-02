@@ -342,11 +342,83 @@
   width: 1920px;
   height: 775px;
   margin: 0 auto;
+  background-image: url(../images/plan-color.png);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(241, 174, 91);
+}
+
+.plan-logo-box {
+  width: 40px;
+  height: 40px;
+  margin-top: 60px;
+}
+.plan-logo-box .plan-logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.plan-hedeingl2 {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+.l-card-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 66px;
+}
+
+.l-card-item {
+  width: 331px;
+  height: 435px;
+}
+
+.item02 {
+  margin-left: 94px;
+  margin-right: 94px;
+}
+
+.l-card-item__img-box {
+  width: 331px;
+  height: 209px;
+}
+.l-card-item__img-box .l-card-item__img {
+  width: 100%;
+  height: auto;
+}
+
+.l-card-item-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-item-str-txt {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  line-height: 2;
+  padding-top: 32px;
+}
+
+.card-item-txt {
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 2;
+  padding-top: 36px;
 }
 
 .l-notice {
