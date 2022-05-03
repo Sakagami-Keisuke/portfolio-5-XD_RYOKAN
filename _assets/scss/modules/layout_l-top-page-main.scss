@@ -3,7 +3,7 @@
     width: 100vw;
     height: 6750px;
 
-    background-color: #fdb3b3;
+    // background-color: #fdb3b3;
 }
 
 // ------ section 1 first view---------------------------
@@ -13,7 +13,6 @@
     width: 1920px;
     height: 1760px;
     margin: 0 auto;
-
 }
 
 // ---------------------------------
@@ -30,8 +29,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-
 }
 
 // ---------------------------------
@@ -49,8 +46,8 @@
 // ---------------------------------
 
 .main-bg {
-transform: scale(1.18,1.18);
-left: 147px;
+    transform: scale(1.18, 1.18);
+    left: 147px;
 }
 
 // ---------------------------------
@@ -263,7 +260,7 @@ left: 147px;
             padding-left: 137px;
         }
 
-        .page-junp-btn01{
+        .page-junp-btn01 {
             margin-top: 65px;
         }
     }
@@ -327,7 +324,7 @@ left: 147px;
             padding-left: 408px;
         }
 
-        .page-junp-btn02{
+        .page-junp-btn02 {
             margin-top: 35px;
             margin-left: 408px;
         }
@@ -391,9 +388,8 @@ left: 147px;
             padding-left: 137px;
         }
 
-        .page-junp-btn03{
+        .page-junp-btn03 {
             margin-top: 65px;
-
         }
     }
 }
@@ -458,12 +454,10 @@ left: 147px;
     font-size: 36px;
     letter-spacing: -0.5px;
     line-height: 2;
-    
 }
 
-.plan-headeingl2{
-    transform: translate(-2px,3px);
-
+.plan-headeingl2 {
+    transform: translate(-2px, 3px);
 }
 
 // ---------------------------------
@@ -533,7 +527,7 @@ left: 147px;
     line-height: 2;
 
     padding-top: 20px;
-    transform: translate(-2px,0);
+    transform: translate(-2px, 0);
 }
 .card-item-txt03 {
     font-family: "游明朝", "YuMincho", serif;
@@ -544,7 +538,7 @@ left: 147px;
     line-height: 2;
 
     padding-top: 17px;
-    transform: translate(-2px,0);
+    transform: translate(-2px, 0);
 }
 // ------ section 3  plan   ---------------------------
 
@@ -600,11 +594,11 @@ left: 147px;
         }
         // ---------------------------------
         .notice-nav-item:first-child {
-           transform: translateX(-38px);
+            transform: translateX(-38px);
         }
         // ---------------------------------
         .notice-nav-item:last-child {
-           transform: translateX(17px);
+            transform: translateX(17px);
         }
         // ---------------------------------
         .notice-nav-item a {
@@ -650,7 +644,7 @@ left: 147px;
 
     // background-color: rgb(126, 120, 111);
 }
-// ---------------------------------
+
 .ln-card-container a:hover {
     opacity: 0.7;
 }
@@ -672,16 +666,17 @@ left: 147px;
     // ---------------------------------
     .ln-card-item__img-box {
         overflow: hidden;
-        width: 103px;
-        height: 100px;
+        width: 105px;
+        height: 125px;
 
-        margin-left: 10px;
+        transform: translate(10px,15px);
 
         // ---------------------------------
         .ln-card-item__img {
             width: 100%;
             height: auto;
-            transform: scale(200%, 200%);
+            transform: scale(160%, 160%);
+            top:10px;
         }
     }
 
@@ -705,7 +700,10 @@ left: 147px;
             color: #000000;
             font-size: 16px;
             letter-spacing: -0.5px;
-            line-height: 2;
+            line-height: 1;
+
+            transform: translateX(8px);
+
         }
         // ---------------------------------
         .card-item-txt {
@@ -714,12 +712,23 @@ left: 147px;
             font-weight: normal;
             color: #000000;
             font-size: 16px;
-            letter-spacing: -0.5px;
+            letter-spacing: 0px;
             line-height: 2;
 
-            padding-top: 10px;
+            padding-top: 0px;
+            transform: translateX(10px);
         }
     }
+}
+
+.ln-c-item04 {
+    margin-left: 45px;
+}
+.ln-c-item05 {
+    margin-left: 45px;
+}
+.ln-c-item06 {
+    margin-left: 45px;
 }
 
 // ------ section 4 notice    ---------------------------
@@ -727,7 +736,7 @@ left: 147px;
 // ------ section 5 access  ---------------------------
 .l-access {
     width: 1920px;
-    height: 1381px;
+    height: 1395px;
     margin: 0 auto;
     // background-color: rgb(153, 156, 146);
 }
@@ -736,7 +745,7 @@ left: 147px;
 
 .l-access-inner {
     width: 1920px;
-    height: 1381px;
+    height: 1395px;
     margin: 0 auto;
 
     background-image: url(../images/access-color.png);
@@ -776,26 +785,35 @@ left: 147px;
         width: 100%;
         height: 370px;
 
+   
+        transform:translateY(64px);
+
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
 
+            // ---------------------------------
+
         .l-access-detail__img-box {
             overflow: hidden;
-            width: 656px;
+            width: 660px;
             height: 370px;
 
-            .logo-img access-logo-img {
-                width: 100%;
-                height: auto;
+            display: flex;
+            transform: scale(1.18,1);
+            margin-left: 170px;
+
+            .access-logo-img {
+       
+
             }
         }
 
         // ---------------------------------
 
         .l-access_txt-box {
-            margin-left: 83px;
+transform: translateX(20px);
 
             display: flex;
             flex-direction: column;
@@ -817,24 +835,31 @@ left: 147px;
                 padding-top: 20px;
             }
             .access_txt02 {
-                padding-top: 24px;
+                padding-top: 12px;
+                line-height: 2;
+                letter-spacing: 0px;
             }
             .access_txt03 {
-                padding-top: 24px;
+                padding-top: 14px;
                 font-weight: bold;
+                letter-spacing: 0.3px;
             }
             .access_txt04 {
-                padding-top: 24px;
+                padding-top: 22px;
+                letter-spacing: 0px;
             }
             .access_txt05 {
-                padding-top: 24px;
+                padding-top: 20px;
                 font-weight: bold;
             }
             .access_txt06 {
-                padding-top: 24px;
+                padding-top: 20px;
+                letter-spacing: 0px;
             }
             .access_txt07 {
-                padding-top: 24px;
+                padding-top: 14px;
+                line-height: 2;
+                letter-spacing: 0px;
             }
         }
     }
@@ -853,6 +878,8 @@ left: 147px;
         .access-map__img-box {
             width: 792px;
             height: 592px;
+
+            transform: translate(-5px,65px);
 
             .access-map__img {
                 width: 100%;
