@@ -1,14 +1,3 @@
-@function variableFontPc($upper, $lower) {
-    $max: $upper;
-    $min: $lower;
-    $viewMin: calc(1025 / 100) + px;
-    $fontDiff: calc($max - $min);
-    $viewPxDiff: calc(1366 - 1024);
-    $ratio: calc(($fontDiff / $viewPxDiff) * 100);
-
-    @return calc(#{$min}px + ((1vw - #{$viewMin})) * #{$ratio});
-}
-
 // $min:指定したい文字サイズの最小値
 // $viewMin:10.24;（文字サイズの最大値と最小値の差）/（ビューポートの最大値と最小値の差）×100
 // $ratio:(文字サイズの最大値と最小値の差）/（ビューポートの最大値と最小値の差）×100
@@ -21,6 +10,17 @@
 // Z… $ratio（文字サイズの最大値と最小値の差）/（ビューポートの最大値と最小値の差）×100
 // 28-20=8 / 1919-1024=895 *100= 0.89
 
+
+@function variableFontPc($upper, $lower) {
+    $max: $upper;
+    $min: $lower;
+    $viewMin: calc(1025 / 100) + px;
+    $fontDiff: calc($max - $min);
+    $viewPxDiff: calc(1366 - 1024);
+    $ratio: calc(($fontDiff / $viewPxDiff) * 100);
+
+    @return calc(#{$min}px + ((1vw - #{$viewMin})) * #{$ratio});
+}
 // ===========================================================
 @function variableFontTab($upper, $lower) {
     $max: $upper;
@@ -32,7 +32,6 @@
 
     @return calc(#{$min}px + ((1vw - #{$viewMin})) * #{$ratio});
 }
-
 // ===========================================================
 @function variableFontSp($upper, $lower) {
     $max: $upper;
@@ -44,3 +43,35 @@
 
     @return calc(#{$min}px + ((1vw - #{$viewMin})) * #{$ratio});
 }
+
+
+
+
+//レスポンシブ PC $upper~$lowerのPX範囲で可変===========================
+@function clampPc($upper, $lower) {
+    $minVW: 1025;
+    $maxVW: 1366;
+    $val_min: $lower * 1px;
+    $val_vw: round(calc($upper / $maxVW) * 100);
+    $val_max: $upper * 1px;
+    @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+  }
+  //レスポンシブ tab $upper~$lowerのPX範囲で可変===========================
+  @function clampTab($upper, $lower) {
+    $minVW: 600;
+    $maxVW: 1024;
+    $val_min: $lower * 1px;
+    $val_vw: round(calc($upper / $maxVW) * 100);
+    $val_max: $upper * 1px;
+    @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+  }
+  //レスポンシブ sp $upper~$lowerのPX範囲で可変===========================
+  @function clampSp($upper, $lower) {
+    $minVW: 375;
+    $maxVW: 599;
+    $val_min: $lower * 1px;
+    $val_vw: round(calc($upper / $maxVW) * 100);
+    $val_max: $upper * 1px;
+    @return clamp(#{$val_min}, #{$val_vw * 1vw}, #{$val_max});
+  }
+  

@@ -5,8 +5,15 @@
   position: fixed;
   height: 80px;
   width: 100vw;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 /* ------------------------------*/
 .l-header01__inner {
   z-index: 500;
@@ -18,8 +25,15 @@
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 /* ------------------------------*/
 /* ロゴ */
 .l-logo-container {
@@ -29,16 +43,39 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 5px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .logo-box {
   width: 40px;
   height: 40px;
   margin-right: 25px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
 .logo-box .logo-img {
   width: 100%;
   height: auto;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
 .logo-box .logo-img:hover {
   opacity: 0.7;
@@ -52,14 +89,28 @@
   color: #ffffff;
   letter-spacing: 6px;
   transform: translateX(13px);
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 /* ナビゲーション */
 .l-header01__navi {
   width: auto;
   margin-left: 120px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .cp-header01__items {
   font-size: 16px;
   font-family: "游明朝", "YuMincho", serif;
@@ -67,19 +118,40 @@
   color: #ffffff;
   display: flex;
   list-style: none;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .cp-header01__item:not(:last-child) {
   margin-right: 31px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .cp-header01__item a {
   display: inline-block;
   transition: 0.2s ease-in-out;
   color: #fff;
   text-decoration: none;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .cp-header01__item a:hover {
   opacity: 0.7;
 }
@@ -94,8 +166,15 @@
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
   color: #ffffff;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
-
 .reservation-button::before {
   content: "";
   display: inline-block;
@@ -106,5 +185,13 @@
   height: 22px;
   transform: translate(0px, -1px);
   margin-right: 10px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
 }
 /*# sourceMappingURL=layout_l-header.css.map */

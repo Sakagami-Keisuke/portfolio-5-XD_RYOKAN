@@ -1,0 +1,222 @@
+@charset "UTF-8";
+#mask {
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#modal {
+  background: #fff;
+  color: #555;
+  width: 550px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 9999;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hotelーreservation {
+  width: 100%;
+  font-size: 20px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#close {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(34, 33, 33);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-brank-bar {
+  width: 80%;
+  border-bottom: solid 1px;
+  border-color: #000000;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.l-form__name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+.form-label-name {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.l-input-name {
+  width: 429px;
+  height: 32px;
+  border: solid 1px;
+  border-color: #E7E7E7;
+  margin-top: 15px;
+}
+
+.l-input-name::placeholder {
+  font-size: 14px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding-left: 10px;
+}
+
+.l-form__email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.form-label-email {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.l-input-email {
+  width: 429px;
+  height: 32px;
+  border: solid 1px;
+  border-color: #E7E7E7;
+  margin-top: 15px;
+}
+
+.l-input-email::placeholder {
+  font-size: 14px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding-left: 10px;
+}
+
+.l-form__Select-plan {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.form-label-Select-plan {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.l-select-plan {
+  width: 429px;
+  height: 32px;
+  border: solid 1px;
+  border-color: #E7E7E7;
+  font-size: 14px;
+  color: #868585;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.l-form__datetime-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.form-label-datetime-select {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.l-input-datetime {
+  width: 429px;
+  height: 32px;
+  border: solid 1px;
+  border-color: #E7E7E7;
+  font-size: 14px;
+  color: #868585;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.l-mdl-sbt-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+input:disabled {
+  width: 198px;
+  height: 42px;
+  background-color: #b5b5b5;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #d3d3d3;
+  font-size: 16px;
+  border: 1px solid #ecebeb;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=component_c_modal-js.css.map */

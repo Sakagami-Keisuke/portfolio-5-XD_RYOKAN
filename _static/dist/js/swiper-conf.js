@@ -13,8 +13,10 @@ const swiper = new Swiper('.swiper', {
 
 
 });
-// 読み込みチェック
-// alert("_static/dist/js/swiper-conf.js load OK!");
+
+// window.onload = function () {
+// 	alert("＜<swiper.conf.js >＞Loading completed");
+// };
 
 //参考
 // https://reiwinn-web.net/2016/11/30/swiper-js-01/

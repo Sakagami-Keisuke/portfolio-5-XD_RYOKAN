@@ -1,8 +1,27 @@
+@use "foundation_mixin";
+
 /* フッター ------------------------------*/
 .l-footer01 {
     width: 100vw;
     height: calc(522px + 60px);
-    // background-color: #d1cfcf;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 /* ------------------------------*/
 
@@ -16,6 +35,24 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 /* ------------------------------*/
 //背景
@@ -33,6 +70,24 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -44,6 +99,24 @@
     width: auto;
 
     margin-top: 50px;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+  }
+   /* PC 1025~1366px */
+   @include foundation_mixin.pc(1367px) {
+
+  }
+   /* TAB 600~1024px */
+   @include foundation_mixin.pc(1025px) {
+
+  }
+   /* SP 375~599px */
+   @include foundation_mixin.pc(600px) {
+
+  }
 }
 
 /* ------------------------------*/
@@ -58,11 +131,47 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 /* ------------------------------*/
 .cp-footer01__item:nth-child(2) {
     margin-left: 34px;
     margin-right: 34px;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 /* ------------------------------*/
 .cp-footer01__item a {
@@ -74,11 +183,9 @@
 .cp-footer01__item a:hover {
     opacity: 0.7;
 }
-
 /* ------------------------------*/
 
 /* ロゴ */
-
 .lf-logo-container {
     position: absolute;
     z-index: 100;
@@ -91,6 +198,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -99,9 +223,45 @@
     width: 40px;
     height: 40px;
 
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
+
     .logo-img {
         width: 100%;
         height: auto;
+
+            
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
     }
     .logo-img:hover {
         opacity: 0.7;
@@ -118,6 +278,24 @@
     letter-spacing: 4px;
 
     margin-top: 20px;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -127,6 +305,24 @@
 
     margin-top: 391px;
     transform: translateX(5px);
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 .adress-num {
@@ -135,7 +331,23 @@
     font-weight: normal;
     color: #000000;
 
-
+    
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 .adress-txt {
@@ -146,6 +358,24 @@
     letter-spacing: 3px;
     
     padding-left: 14px;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -155,6 +385,24 @@
     margin-top: 430px;
 
     transform: translateX(4px);
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 
@@ -164,6 +412,24 @@
     font-weight: normal;
     color: #000000;
    
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 
@@ -173,6 +439,24 @@
     font-weight: normal;
     color: #000000;
     margin-left: 14px;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -185,6 +469,24 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/
@@ -194,6 +496,24 @@
     font-family: "游明朝", "YuMincho", serif;
     font-weight: bold;
     color: #ffffff;
+
+        
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+      
+    }
+     /* PC 1025~1366px */
+     @include foundation_mixin.pc(1367px) {
+  
+    }
+     /* TAB 600~1024px */
+     @include foundation_mixin.pc(1025px) {
+  
+    }
+     /* SP 375~599px */
+     @include foundation_mixin.pc(600px) {
+  
+    }
 }
 
 /* ------------------------------*/

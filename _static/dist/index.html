@@ -48,7 +48,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- swiper js -->
+    <!-- swiper css -->
     <link rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -79,18 +79,90 @@
         <!-- ナビゲーション -->
         <nav class="l-header01__navi">
           <ul class="cp-header01__items">
-            <li class="cp-header01__item"><a href="">お部屋</a></li>
-            <li class="cp-header01__item"><a href="">お料理</a></li>
-            <li class="cp-header01__item"><a href="">温泉</a></li>
+            <li class="cp-header01__item"><a href="room.html" target="_blank"
+                rel="noopener noreferrer">
+                お部屋</a></li>
+            <li class="cp-header01__item"><a href="menu.html" target="_blank"
+                rel="noopener noreferrer">
+                お料理</a></li>
+            <li class="cp-header01__item"><a href="hot-spring.html"
+                target="_blank" rel="noopener noreferrer">
+                温泉</a></li>
           </ul>
         </nav><!-- /ナビゲーション -->
 
-        <!-- 宿泊予約ボタン -->
 
-        <button type="button" class="button reservation-button">宿泊予約</button>
-        <!-- <img class="calendar-img" src="images/calendar.png" alt="calendar" loading="lazy"> -->
         <!-- 宿泊予約ボタン -->
+        <button type="button" id="open" class="button reservation-button">
+          宿泊予約</button>
 
+        <!-- ------------------------------ モーダル ------------------------------->
+        <!-- マスク -->
+        <div id="mask" class="hidden"></div>
+
+        <!-- モーダル -->
+        <section id="modal" class="hidden">
+          <div class="reservation-form-container">
+
+            <form action="" id="form" class="reservation-form">
+
+              <p class="hotelーreservation">宿泊予約
+                <!-- モーダル閉じる-->
+                <div id="close" class="close-btn">×</div>
+              </p>
+              <div class="modal-brank-bar"></div>
+
+
+              <div class="l-form__name">
+                <label htmlFor="name" class="form-label-name">お名前
+                  <!-- <span class="cmn-required-label">必須</span> -->
+                </label>
+                <input type="text" placeholder="例：坂神慶丞" required id="name"
+                  class="l-input-name">
+              </div>
+
+
+              <div class="l-form__email">
+                <label htmlFor="email" class="form-label-email">メールアドレス
+                  <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                </label>
+                <input type="text" placeholder="例：Example@example.com" required
+                  id="email" class="l-input-email">
+              </div>
+
+
+              <div class="l-form__Select-plan">
+                <label htmlFor="Select-plan" class="form-label-Select-plan">ご希望プラン（空いているプランのみ表示されます）
+                  <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                </label>
+                <select name="l-select-plan" class="l-select-plan"
+                  id="Select-date-time">
+                  <option value="">プランを選択してください</option>
+                  <option value="">朝食付きプラン</option>
+                  <option value="">【期間限定】熱海蟹をたっぷりと愉しむプラン</option>
+                  <option value="">【平日限定】贅沢美味懐石プラン</option>
+                  <option value="">【平日限定】海辺の四季旬彩プラン</option>
+                </select>
+              </div>
+
+
+              <div class="l-form__datetime-select">
+                <label htmlFor="datetime-select"
+                  class="form-label-datetime-select">日時選択
+                  <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                </label>
+                <input type="datetime-local" required id="datetime-select"
+                  class="l-input-datetime">
+              </div>
+
+              <!-- disabled jsで解除-->
+              <input type="submit" value="送信する" class="modal-submit-btn l-mdl-sbt-btn" disabled id="js-submit">
+
+            </form>
+
+
+          </div>
+        </section><!-- ------------------------------ モーダル ------------------------------->
       </div>
     </header>
     <!----------------------------------- header ------------------------------------->
@@ -138,7 +210,9 @@
                 <span class="feature-txt01">まるで時が止まったかのような、圧倒的な静寂のなかで、<span
                     class="br"><br></span>
                   ひたすらにゆったりと…。<span class="br"><br></span>最高級の「何もしない時間」をお過ごしください。</span>
-                <a class="page-junp-btn page-junp-btn01" href="/">お部屋について</a>
+                <a class="page-junp-btn page-junp-btn01" href="room.html"
+                  target="_blank" rel="noopener noreferrer">
+                  お部屋について</a>
               </div>
             </div>
 
@@ -153,7 +227,9 @@
                   最高級A5ランクの米沢牛と共に頂く。<span class="br"><br></span>あなたの人生史に残る「極上の感動」を<span
                     class="br"><br></span>
                   お約束します。</span>
-                <a class="page-junp-btn page-junp-btn02" href="/">料理について</a>
+                <a class="page-junp-btn page-junp-btn02" href="menu.html"
+                  target="_blank" rel="noopener noreferrer">
+                  料理について</a>
               </div>
             </div>
 
@@ -168,7 +244,9 @@
                 <span class="feature-txt03">古くは弘法大師の病をも治療したと言われる熱海の泉質。<span
                     class="br"><br></span>
                   現代人の疲弊しきった身体を修復する最高級の湯治場として<span class="br"><br></span>ご活用ください。</span>
-                <a class="page-junp-btn page-junp-btn03" href="/">温泉について</a>
+                <a class="page-junp-btn page-junp-btn03" href="hot-spring.html"
+                  target="_blank" rel="noopener noreferrer">
+                  温泉について</a>
               </div>
             </div>
           </section> <!-- ------ section 2  feature  -------------- -->
@@ -415,9 +493,15 @@
               <!-- ナビゲーション -->
               <nav class="l-footer01__navi">
                 <ul class="cp-footer01__items">
-                  <li class="cp-footer01__item"><a href="">お部屋</a></li>
-                  <li class="cp-footer01__item"><a href="">お料理</a></li>
-                  <li class="cp-footer01__item"><a href="">温泉</a></li>
+                  <li class="cp-footer01__item"><a href="room.html"
+                      target="_blank" rel="noopener noreferrer">
+                      お部屋</a></li>
+                  <li class="cp-footer01__item"><a href="menu.html"
+                      target="_blank" rel="noopener noreferrer">
+                      お料理</a></li>
+                  <li class="cp-footer01__item"><a href="hot-spring.html"
+                      target="_blank" rel="noopener noreferrer">
+                      温泉</a></li>
                 </ul>
               </nav><!-- /ナビゲーション -->
               <!-- ロゴ -->
@@ -445,16 +529,17 @@
         </footer> <!----------------------------------------- footer ----------------------------------------->
       </div>
 
+      <!-- swiper js -->
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="js/swiper-conf.js"></script>
-      <!-- <script>    const swiper = new Swiper('.slider1', {});    </script> -->
-      <script src="js/jquery.js"></script>
+      <!-- animation -->
       <script>AOS.init(); </script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+      <!-- JQuery scroll -->
       <script src="js/scroll.js"></script>
+      <!-- modal -->
+      <script src="js/modal.js"></script>
 
+      <script src="js/submit-btn.js"></script>
     </body>
 
   </html>
