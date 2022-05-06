@@ -282,6 +282,8 @@
     font-family: "游明朝", "YuMincho", serif;
     font-weight: normal;
     color: #ffffff;
+    padding-left: 35px;
+
 
     
     /* PC-l 1367px~  */
@@ -302,34 +304,40 @@
     }
 }
 
-.reservation-button::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../../../../images/calendar.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.reservation-btn-icon{
+    position: absolute;
+    transform: translate(-55px,-2px);
 
-    width: 22px;
-    height: 22px;
+}
 
-    transform: translate(0px, -1px);
-    margin-right: 10px;
+// .reservation-button::before {
+//     content: "";
+//     display: inline-block;
+//     background-image: image-url("../../../../images/calendar.png");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+
+//     width: 22px;
+//     height: 22px;
+
+//     transform: translate(0px, -1px);
+//     margin-right: 10px;
 
         
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
+//     /* PC-l 1367px~  */
+//     @include foundation_mixin.pc(1367px) {
       
-    }
-     /* PC 1025~1366px */
-     @include foundation_mixin.pc(1367px) {
+//     }
+//      /* PC 1025~1366px */
+//      @include foundation_mixin.pc(1367px) {
   
-    }
-     /* TAB 600~1024px */
-     @include foundation_mixin.pc(1025px) {
+//     }
+//      /* TAB 600~1024px */
+//      @include foundation_mixin.pc(1025px) {
   
-    }
-     /* SP 375~599px */
-     @include foundation_mixin.pc(600px) {
+//     }
+//      /* SP 375~599px */
+//      @include foundation_mixin.pc(600px) {
   
-    }
-}
+//     }
+// }

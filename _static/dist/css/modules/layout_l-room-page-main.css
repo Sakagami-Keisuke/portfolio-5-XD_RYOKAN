@@ -1,0 +1,452 @@
+@charset "UTF-8";
+.l-room-page-main {
+  width: 100vw;
+  height: auto;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-first-view {
+  position: static;
+  width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-fv-inner {
+  position: static;
+  width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-fvーinner__img-container {
+  overflow: hidden;
+  width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.main-bg {
+  transform: scale(1.18, 1.18);
+  left: 147px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.main-bng__txt {
+  font-size: 34px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature {
+  width: 1920px;
+  height: 2063px;
+  height: auto;
+  margin: 0 auto;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature-inner {
+  position: relative;
+  width: 1180px;
+  height: 1940px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-room-page-map {
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.page-map__txt {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 0px;
+  line-height: 1;
+}
+
+.room-feature-txt {
+  font-size: 16px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 0px;
+  line-height: 2;
+  text-align: center;
+  padding-top: 98px;
+}
+
+.room-l-feature01 {
+  width: 100%;
+  height: 438px;
+  margin-top: 84px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature01 .room-l-feature-img-box01 {
+  z-index: 1000;
+  overflow: hidden;
+  width: 525px;
+  /* トリミングしたい枠の幅 */
+  height: 300;
+  /* トリミングしたい枠の高さ */
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature01 .room-l-feature-img-box01 .room-feature-img01 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -11%);
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature01 .room-l-feature-txt-box01 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature01 .room-l-feature-txt-box01 .room-feature-txt-strong01 {
+  z-index: 1000;
+  font-size: 24px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  letter-spacing: 0px;
+  line-height: 1;
+  padding-top: 117px;
+  padding-left: 80px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-feature-color-img {
+  z-index: 500;
+  position: absolute;
+  width: 813px;
+  height: 381px;
+  top: 57px;
+  right: 0;
+}
+
+.room-feature-color-img02 {
+  z-index: 500;
+  position: absolute;
+  width: 813px;
+  height: 381px;
+  top: 57px;
+  left: 0;
+}
+
+.room-feature-txt01 {
+  z-index: 1000;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 2;
+  padding-top: 52px;
+  padding-left: 80px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-feature-txt02 {
+  z-index: 1000;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+  padding-top: 52px;
+  padding-left: 80px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature02 {
+  width: 100%;
+  height: 438px;
+  margin-top: 84px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature02 .room-l-feature-img-box02 {
+  z-index: 1000;
+  overflow: hidden;
+  width: 525px;
+  /* トリミングしたい枠の幅 */
+  height: 300;
+  /* トリミングしたい枠の高さ */
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature02 .room-l-feature-img-box02 .room-feature-img02 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -11%);
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature02 .l-feature-txt-box02 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature02 .l-feature-txt-box02 .feature-txt-strong02 {
+  z-index: 1000;
+  font-size: 24px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  letter-spacing: 0px;
+  line-height: 1;
+  padding-top: 41px;
+  padding-left: 409px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature03 {
+  width: 100%;
+  height: 438px;
+  margin-top: 84px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature03 .room-l-feature-img-box03 {
+  z-index: 1000;
+  overflow: hidden;
+  width: 525px;
+  /* トリミングしたい枠の幅 */
+  height: 300;
+  /* トリミングしたい枠の高さ */
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature03 .room-l-feature-img-box03 .room-feature-img03 {
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -9.5%);
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature03 .l-feature-txt-box03 {
+  width: 870px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.room-l-feature03 .l-feature-txt-box03 .feature-txt-strong03 {
+  z-index: 1000;
+  font-size: 24px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  padding-left: 137px;
+  letter-spacing: 0px;
+  line-height: 1;
+  padding-top: 117px;
+  padding-left: 80px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+/*# sourceMappingURL=layout_l-room-page-main.css.map */
