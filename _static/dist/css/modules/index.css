@@ -473,8 +473,8 @@ ul {
 /* ------------------------------*/
 /* ナビゲーション */
 .l-footer01__navi {
+  z-index: 2;
   position: absolute;
-  z-index: 100;
   width: auto;
   margin-top: 50px;
   /* PC-l 1367px~  */
@@ -534,8 +534,8 @@ ul {
 /* ------------------------------*/
 /* ロゴ */
 .lf-logo-container {
+  z-index: 2;
   position: absolute;
-  z-index: 100;
   width: 145px;
   height: 92px;
   margin-top: 230px;
@@ -2362,7 +2362,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature01 .room-l-feature-img-box01 {
-  z-index: 1000;
+  z-index: 2;
   overflow: hidden;
   width: 525px;
   /* トリミングしたい枠の幅 */
@@ -2406,7 +2406,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature01 .room-l-feature-txt-box01 .room-feature-txt-strong01 {
-  z-index: 1000;
+  z-index: 2;
   font-size: 24px;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
@@ -2426,7 +2426,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-feature-color-img {
-  z-index: 500;
+  z-index: 1;
   position: absolute;
   width: 813px;
   height: 381px;
@@ -2435,7 +2435,7 @@ ul {
 }
 
 .room-feature-color-img02 {
-  z-index: 500;
+  z-index: 1;
   position: absolute;
   width: 813px;
   height: 381px;
@@ -2444,7 +2444,7 @@ ul {
 }
 
 .room-feature-txt01 {
-  z-index: 1000;
+  z-index: 2;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
   color: #000000;
@@ -2452,7 +2452,7 @@ ul {
   letter-spacing: 0px;
   line-height: 2;
   padding-top: 52px;
-  padding-left: 80px;
+  padding-left: 60px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -2463,7 +2463,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-feature-txt02 {
-  z-index: 1000;
+  z-index: 2;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
   color: #000000;
@@ -2471,7 +2471,7 @@ ul {
   letter-spacing: 0px;
   line-height: 1;
   padding-top: 52px;
-  padding-left: 80px;
+  padding-left: 60px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -2498,7 +2498,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature02 .room-l-feature-img-box02 {
-  z-index: 1000;
+  z-index: 2;
   overflow: hidden;
   width: 525px;
   /* トリミングしたい枠の幅 */
@@ -2542,7 +2542,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature02 .l-feature-txt-box02 .feature-txt-strong02 {
-  z-index: 1000;
+  z-index: 2;
   font-size: 24px;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
@@ -2550,8 +2550,8 @@ ul {
   padding-left: 137px;
   letter-spacing: 0px;
   line-height: 1;
-  padding-top: 41px;
-  padding-left: 409px;
+  padding-top: 117px;
+  padding-left: 50px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -2579,7 +2579,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature03 .room-l-feature-img-box03 {
-  z-index: 1000;
+  z-index: 2;
   overflow: hidden;
   width: 525px;
   /* トリミングしたい枠の幅 */
@@ -2623,7 +2623,7 @@ ul {
   /* 1367pxを含まずそれより小さい */
 }
 .room-l-feature03 .l-feature-txt-box03 .feature-txt-strong03 {
-  z-index: 1000;
+  z-index: 2;
   font-size: 24px;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;

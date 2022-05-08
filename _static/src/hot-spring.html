@@ -1,1 +1,301 @@
-<h1>温泉</h1>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+
+
+    <!-- Primary Meta Tags -->
+    <title>石井花壇 | 温海温泉旅館【架空のサイト】</title>
+    <meta name="title" content="石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+            伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="石井花壇 | 温海温泉旅館【架空のサイト】">
+    <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+            伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="石井花壇 | 温海温泉旅館【架空のサイト】">
+    <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+            伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- AOS js Animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<!------------------------------------- body --------------------------------------->
+<!----------------------------------- header ------------------------------------->
+
+<body>
+    <!-- header -->
+    <header class="l-header01">
+        <div class="l-header01__inner">
+            <!-- ロゴ -->
+            <div class="l-logo-container">
+                <div class="l-logo-box">
+                    <img class="logo-img" src="images/logo01.png" alt="ロゴ" loading="lazy">
+                </div>
+                <h1 class="heading"> 石井花壇<a href=""><img src="/" alt=""></a></h1>
+            </div>
+            <!-- /ロゴ -->
+
+            <!-- ナビゲーション -->
+            <nav class="l-header01__navi">
+                <ul class="cp-header01__items">
+                    <li class="cp-header01__item"><a href="room.html" target="_blank" rel="noopener noreferrer">
+                            お部屋</a></li>
+                    <li class="cp-header01__item"><a href="menu.html" target="_blank" rel="noopener noreferrer">
+                            お料理</a></li>
+                    <li class="cp-header01__item"><a href="hot-spring.html" target="_blank" rel="noopener noreferrer">
+                            温泉</a></li>
+                </ul>
+            </nav><!-- /ナビゲーション -->
+
+
+            <!-- 宿泊予約ボタン -->
+            <button type="button" id="open" class="button
+                    reservation-button">
+                宿泊予約
+                <img class="reservation-btn-icon" src="images/calendar.png" alt="アイコン"></button>
+
+            <!-- ------------------------------ モーダル ------------------------------->
+            <!-- マスク -->
+            <div id="mask" class="hidden"></div>
+
+            <!-- モーダル -->
+            <section id="modal" class="hidden">
+                <div class="reservation-form-container">
+
+                    <form action="" id="form" class="reservation-form">
+
+                        <p class="hotelーreservation">宿泊予約
+                            <!-- モーダル閉じる-->
+                        <div id="close" class="close-btn">×</div>
+                        </p>
+                        <div class="modal-brank-bar"></div>
+
+
+                        <div class="l-form__name">
+                            <label htmlFor="name" class="form-label-name">お名前
+                                <!-- <span class="cmn-required-label">必須</span> -->
+                            </label>
+                            <input type="text" placeholder="例：坂神慶丞" required id="name" class="l-input-name">
+                        </div>
+
+
+                        <div class="l-form__email">
+                            <label htmlFor="email" class="form-label-email">メールアドレス
+                                <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                            </label>
+                            <input type="text" placeholder="例：Example@example.com" required id="email"
+                                class="l-input-email">
+                        </div>
+
+
+                        <div class="l-form__Select-plan">
+                            <label htmlFor="Select-plan" class="form-label-Select-plan">ご希望プラン（空いているプランのみ表示されます）
+                                <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                            </label>
+                            <select name="l-select-plan" class="l-select-plan" id="Select-date-time">
+                                <option value="">プランを選択してください</option>
+                                <option value="">朝食付きプラン</option>
+                                <option value="">【期間限定】熱海蟹をたっぷりと愉しむプラン</option>
+                                <option value="">【平日限定】贅沢美味懐石プラン</option>
+                                <option value="">【平日限定】海辺の四季旬彩プラン</option>
+                            </select>
+                        </div>
+
+
+                        <div class="l-form__datetime-select">
+                            <label htmlFor="datetime-select" class="form-label-datetime-select">日時選択
+                                <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
+                            </label>
+                            <input type="datetime-local" required id="datetime-select" class="l-input-datetime">
+                        </div>
+
+                        <!-- disabled jsで解除-->
+                        <input type="submit" value="送信する" class="modal-submit-btn l-mdl-sbt-btn" disabled
+                            id="js-submit">
+
+                    </form>
+
+
+                </div>
+            </section><!-- ------------------------------ モーダル ------------------------------->
+        </div>
+    </header>
+    <!----------------------------------- header ------------------------------------->
+    <!------------------------------------- main ------------------------------------->
+    <main>
+        <div class="l-room-page-main">
+
+            <!-- ------ section 1  first-view  ------------------------ -->
+            <section class="room-first-view">
+                <div class="room-l-fv-inner">
+                    <div class="room-l-fvーinner__img-container">
+                        <img class="main-bg" src="images/onsen-header.jpg">
+                        <span class="main-bng__txt">温泉</span>
+                    </div>
+                </div>
+
+            </section> <!-- ------ section 1  first-view  ------------- -->
+            <!-- ------ section 2  feature  --------------------------- -->
+            <section class="room-l-feature">
+                <div class="room-l-feature-inner">
+
+                    <div class="l-room-page-map">
+                        <span class="page-map__txt">トップ > 温泉</span>
+                    </div>
+
+                    <span class="room-feature-txt">
+                        心も身体も癒やす汐の温泉。<span class="br"><br></span>
+                        湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<span class="br"><br></span>
+                        柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。
+                    </span>
+                    <!------------------------------------------------ LINE01 ------------------------------------------------>
+                    <div class="room-l-feature01">
+                        <div class="room-l-feature-img-box01">
+                            <img class="room-feature-img01" src="images/Medium_onsen01.jpg" alt="feature-image"
+                                loading="lazy">
+                        </div>
+                        <div class="room-l-feature-txt-box01">
+                            <img class="room-feature-color-img" src="images/room-feature-color.jpg" alt="feature-image"
+                                loading="lazy">
+                            <span class="room-feature-txt-strong01">貸し切り露天風呂「雲居の湯」</span>
+                            <span class="room-feature-txt01">弱酸性の湯質が優しく肌を包み込むような心地よさ<span class="br"><br></span>
+                                最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を<span class="br"><br></span>
+                                熱海の町並みを遠方に望みながら・・・
+                            </span>
+                        </div>
+                    </div>
+                    <!------------------------------------------------ LINE02 ------------------------------------------------>
+                    <div class="room-l-feature02">
+                        <div class="room-l-feature-img-box02">
+                            <img class="room-feature-img02" src="images/Medium_onsen02.jpg" alt="feature-image"
+                                loading="lazy">
+                        </div>
+                        <div class="l-feature-txt-box02">
+                            <img class="room-feature-color-img02" src="images/room-feature-color.jpg"
+                                alt="feature-image" loading="lazy">
+                            <span class="feature-txt-strong02">美肌を促す乳白色の硫黄泉を</span>
+                            <span class="room-feature-txt01">まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<span class="br"><br></span>
+                                たっぷりと掛け流しています。<span class="br"><br></span>
+                                四季の移り変わりを、天然温泉の湯に浸りながら味わってください。
+                            </span>
+                        </div>
+                    </div>
+                    <!------------------------------------------------ LINE03 ------------------------------------------------>
+                    <!-- <div class="room-l-feature03">
+                            <div class="room-l-feature-img-box03">
+                                <img class="room-feature-img03"
+                                    src="images/Medium_menu03.jpg"
+                                    alt="feature-image"
+                                    loading="lazy">
+                            </div>
+                            <div class="l-feature-txt-box03">
+                                <img class="room-feature-color-img"
+                                    src="images/room-feature-color.jpg"
+                                    alt="feature-image"
+                                    loading="lazy">
+                                <span class="feature-txt-strong03">食材が一流、職人も一流</span>
+                                <span class="room-feature-txt01">石井花壇の料理人は料亭で20年経験を積んだものばかり。<span
+                                        class="br"><br></span>
+                                    その時の最も旬な食材を、最高の調理でお届けします。<span
+                                        class="br"><br></span>
+                                    また、お料理への細かいご要望にもお答えできますので、<span
+                                        class="br"><br></span>
+                                    お気軽にお申し付けください。
+                                </span>
+                            </div>
+                        </div> -->
+            </section> <!-- ------ section 2  feature  -------------- -->
+    </main>
+    <!------------------------------------- main ------------------------------------->
+    <!----------------------------------------- footer ----------------------------------------->
+    <footer class="l-footer01">
+        <div class="l-footer01__inner">
+            <img class="footer-color" src="images/footer.png">
+            <!-- ナビゲーション -->
+            <nav class="l-footer01__navi">
+                <ul class="cp-footer01__items">
+                    <li class="cp-footer01__item"><a href="room.html" target="_blank" rel="noopener
+                                        noreferrer">
+                            お部屋</a></li>
+                    <li class="cp-footer01__item"><a href="menu.html" target="_blank" rel="noopener
+                                        noreferrer">
+                            お料理</a></li>
+                    <li class="cp-footer01__item"><a href="hot-spring.html" target="_blank" rel="noopener
+                                        noreferrer">
+                            温泉</a></li>
+                </ul>
+            </nav><!-- /ナビゲーション -->
+            <!-- ロゴ -->
+            <div class="lf-logo-container">
+                <div class="lf-logo-box">
+                    <img class="logo-img" src="images/logo02.png" alt="ロゴ" loading="lazy">
+                </div>
+                <h class="lf-heading"> 石井花壇<a href=""><img src="/" alt=""></a></h>
+            </div><!-- /ロゴ -->
+            <div class="l-adress-inner">
+                <span class="adress-num">〒000-0000</span>
+                <span class="adress-txt">山形県鶴岡市xxxxxxxxxxx</span>
+            </div>
+            <div class="l-tel-inner">
+                <span class="tel-num">TEL.000-0000-0000</span>
+                <span class="fax-num">FAX.00-0000-0000</span>
+            </div>
+            </img>
+        </div>
+
+        <div class="l-copylight">
+            <span class="copylight">Copyright © 石井花壇 All Rights
+                Reserved.</span>
+        </div>
+    </footer>
+    <!----------------------------------------- footer ----------------------------------------->
+    </div>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper-conf.js"></script>
+    <!-- animation -->
+    <script>AOS.init(); </script>
+    <!-- JQuery scroll -->
+    <script src="js/scroll.js"></script>
+    <!-- modal -->
+    <script src="js/modal.js"></script>
+
+    <script src="js/submit-btn.js"></script>
+</body>
+
+</html>
