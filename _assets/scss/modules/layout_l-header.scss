@@ -171,6 +171,7 @@
     }
 }
 
+/* ------------------------------*/
 /* ナビゲーション */
 .l-header01__navi {
     // background: #636161;
@@ -271,6 +272,7 @@
     opacity: 0.7;
 }
 
+/* ------------------------------*/
 .reservation-button {
     position: absolute;
     right: 20px;
@@ -310,34 +312,16 @@
 
 }
 
-// .reservation-button::before {
-//     content: "";
-//     display: inline-block;
-//     background-image: image-url("../../../../images/calendar.png");
-//     background-size: contain;
-//     background-repeat: no-repeat;
 
-//     width: 22px;
-//     height: 22px;
+/* ------------------------------*/
+//github icon
 
-//     transform: translate(0px, -1px);
-//     margin-right: 10px;
+.icon-container{
+    position: absolute;
+    right:12%
+}
 
-        
-//     /* PC-l 1367px~  */
-//     @include foundation_mixin.pc(1367px) {
-      
-//     }
-//      /* PC 1025~1366px */
-//      @include foundation_mixin.pc(1367px) {
-  
-//     }
-//      /* TAB 600~1024px */
-//      @include foundation_mixin.pc(1025px) {
-  
-//     }
-//      /* SP 375~599px */
-//      @include foundation_mixin.pc(600px) {
-  
-//     }
-// }
+.teal-color {
+    color:teal;
+
+}

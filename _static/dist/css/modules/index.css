@@ -335,6 +335,7 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+/* ------------------------------*/
 /* ナビゲーション */
 .l-header01__navi {
   width: auto;
@@ -393,6 +394,7 @@ ul {
   opacity: 0.7;
 }
 
+/* ------------------------------*/
 .reservation-button {
   position: absolute;
   right: 20px;
@@ -416,6 +418,16 @@ ul {
 .reservation-btn-icon {
   position: absolute;
   transform: translate(-55px, -2px);
+}
+
+/* ------------------------------*/
+.icon-container {
+  position: absolute;
+  right: 12%;
+}
+
+.teal-color {
+  color: teal;
 }
 
 /* フッター ------------------------------*/
