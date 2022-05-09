@@ -16,7 +16,7 @@
 
 
     <!-- Primary Meta Tags -->
-    <title>石井花壇 |  温海温泉旅館【架空のサイト】</title>
+    <title>石井花壇 | 温海温泉旅館【架空のサイト】</title>
     <meta name="title" content="石井花壇 | 温海温泉旅館【公式サイト】">
     <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
       伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
@@ -25,7 +25,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="石井花壇 |  温海温泉旅館【架空のサイト】">
+    <meta property="og:title" content="石井花壇 | 温海温泉旅館【架空のサイト】">
     <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
       伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
     <meta property="og:image"
@@ -33,7 +33,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="石井花壇 |  温海温泉旅館【架空のサイト】">
+    <meta property="twitter:title" content="石井花壇 | 温海温泉旅館【架空のサイト】">
     <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
       伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
     <meta property="twitter:image"
@@ -57,6 +57,12 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
   </head>
 
 
@@ -95,7 +101,8 @@
         <!-- 宿泊予約ボタン -->
         <button type="button" id="open" class="button reservation-button">
           宿泊予約
-        <img class="reservation-btn-icon" src="images/calendar.png" alt="アイコン"></button>
+          <img class="reservation-btn-icon" src="images/calendar.png"
+            alt="アイコン"></button>
 
         <!-- ------------------------------ モーダル ------------------------------->
         <!-- マスク -->
@@ -152,12 +159,15 @@
                   class="form-label-datetime-select">日時選択
                   <!-- <span class="cmn-required-label rqurd-lbl02">必須</span> -->
                 </label>
-                <input type="datetime-local" required id="datetime-select"
+                <input type="text" required id="flatpickr"
                   class="l-input-datetime">
+                <!-- <input type="datetime-local" required id="datetime-select"
+                  class="l-input-datetime"> -->
               </div>
 
               <!-- disabled jsで解除-->
-              <input type="submit" value="送信する" class="modal-submit-btn l-mdl-sbt-btn" disabled id="js-submit">
+              <input type="submit" value="送信する" class="modal-submit-btn
+                l-mdl-sbt-btn" disabled id="js-submit">
 
             </form>
 
@@ -531,16 +541,14 @@
       </div>
 
       <!-- swiper js -->
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/swiper-conf.js"></script>
+      <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+      <!-- <script src="js/swiper-conf.js"></script> -->
       <!-- animation -->
-      <script>AOS.init(); </script>
-      <!-- JQuery scroll -->
-      <script src="js/scroll.js"></script>
-      <!-- modal -->
+      <!-- <script>AOS.init(); </script> -->
+      <!-- <script src="js/scroll.js"></script> -->
       <script src="js/modal.js"></script>
-
       <script src="js/submit-btn.js"></script>
+      <script src="js/flatpickr.js"></script>
     </body>
 
   </html>
