@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.l-hs-feature02 {
+  margin-bottom: 165px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-efficacy-of-hot-springs-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: solid 1px;
+  border-color: #E7E7E7;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.efficacy-of-hot-springs-headingl2 {
+  font-size: 23px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 0px;
+  line-height: 1;
+  padding-top: 95px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-efficacy-detail {
+  width: 75%;
+  margin-top: 51px;
+  margin-bottom: 96px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-efficacy-detail__line {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 1px;
+  border-color: #E7E7E7;
+  font-size: 15px;
+  font-family: "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  color: #000000;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-efficacy-detail :first-of-type {
+  border-top: solid 1px;
+  border-color: #E7E7E7;
+}
+
+.l-efficacy-detail__line :first-of-type {
+  border-top: none;
+}
+
+.efficacy-detail-header {
+  width: 25%;
+  padding-left: 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.efficacy-detail-txt {
+  width: 75%;
+  overflow: wrap;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+.l-brank-border {
+  width: 100%;
+  height: 74px;
+  border-bottom: solid 1px;
+  border-color: #E7E7E7;
+  margin-bottom: 96px;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+/*# sourceMappingURL=layout_l-hot-spring.css.map */
