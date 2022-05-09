@@ -32,6 +32,6 @@ jQuery(function($){
 	});
 });
 
-window.onload = function () {
-	alert("＜<tab.js >＞Loading completed");
-};
+// window.onload = function () {
+// 	alert("＜<tab.js >＞Loading completed");
+// };

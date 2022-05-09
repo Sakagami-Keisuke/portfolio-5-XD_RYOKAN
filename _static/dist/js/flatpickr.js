@@ -8,6 +8,6 @@ flatpickr('#flatpickr',{
 });
 
 
-window.onload = function () {
-	alert("＜<flatpicker.js >＞Loading completed");
-};
+// window.onload = function () {
+// 	alert("＜<flatpicker.js >＞Loading completed");
+// };
