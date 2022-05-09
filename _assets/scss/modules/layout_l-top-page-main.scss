@@ -1785,6 +1785,8 @@
             display: flex;
             list-style: none;
 
+            cursor:pointer;
+
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
     
@@ -1925,6 +1927,25 @@
     opacity: 0.7;
 }
 // ---------------------------------
+
+// タブ
+.panel{
+    display:none;
+}
+.tab.is-active{
+    text-decoration: underline;
+    transition: all 0.2s ease-out;
+  }
+  .panel.is-show{
+    display:block;
+  }
+
+// ---------------------------------
+
+
+// ---------------------------------
+
+
 
 .ln-card-item {
     width: 570px;

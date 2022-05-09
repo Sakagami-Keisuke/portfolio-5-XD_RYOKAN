@@ -1004,6 +1004,7 @@
   color: #000000;
   display: flex;
   list-style: none;
+  cursor: pointer;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -1088,6 +1089,19 @@
 }
 .ln-card-container a:hover {
   opacity: 0.7;
+}
+
+.panel {
+  display: none;
+}
+
+.tab.is-active {
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+
+.panel.is-show {
+  display: block;
 }
 
 .ln-card-item {
