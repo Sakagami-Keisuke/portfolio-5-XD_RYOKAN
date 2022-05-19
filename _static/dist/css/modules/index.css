@@ -207,8 +207,6 @@ select {
   /* 600pxを含まずそれより小さい */
 }
 .body img {
-  max-width: 100%;
-  height: auto;
   vertical-align: bottom;
 }
 body * {
@@ -238,10 +236,6 @@ ul {
 
 /* ヘッダー ------------------------------*/
 .l-header01 {
-  z-index: 100;
-  position: fixed;
-  height: 80px;
-  width: 100vw;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -251,11 +245,33 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1367px) {
+  .l-header01 {
+    z-index: 100;
+    position: fixed;
+    height: 80px;
+    width: 100vw;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .l-header01 {
+    z-index: 100;
+    position: fixed;
+    height: 80px;
+    width: 100vw;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-header01 {
+    z-index: 100;
+    position: fixed;
+    height: 80px;
+    width: 100vw;
+  }
+}
+
 /* ------------------------------*/
 .l-header01__inner {
-  z-index: 500;
-  width: 1920px;
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -271,6 +287,28 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1367px) {
+  .l-header01__inner {
+    z-index: 500;
+    width: 1920px;
+    height: 100%;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .l-header01__inner {
+    z-index: 500;
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-header01__inner {
+    z-index: 500;
+    width: 100vw;
+    height: 100%;
+  }
+}
+
 /* ------------------------------*/
 /* ロゴ */
 .l-logo-container {
@@ -289,9 +327,7 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.logo-box {
-  width: 40px;
-  height: 40px;
+.l-logo-box {
   margin-right: 25px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
@@ -302,7 +338,32 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.logo-box .logo-img {
+@media not all and (min-width: 1367px) {
+  .l-logo-box {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .l-logo-box {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .l-logo-box {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-logo-box {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+}
+.l-logo-box .logo-img {
   width: 100%;
   height: auto;
   /* PC-l 1367px~  */
@@ -314,7 +375,7 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.logo-box .logo-img:hover {
+.l-logo-box .logo-img:hover {
   opacity: 0.7;
   transition: 0.2s ease-in-out;
 }
@@ -335,6 +396,22 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1367px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .heading {
+    font-size: 22px;
+  }
+}
+
 /* ------------------------------*/
 /* ナビゲーション */
 .l-header01__navi {
@@ -349,6 +426,12 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .l-header01__navi {
+    display: none;
+  }
+}
+
 .cp-header01__items {
   font-size: 16px;
   font-family: "游明朝", "YuMincho", serif;
@@ -397,11 +480,9 @@ ul {
 /* ------------------------------*/
 .reservation-button {
   position: absolute;
-  right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
   color: #ffffff;
@@ -415,19 +496,91 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1367px) {
+  .reservation-button {
+    font-size: 16px;
+    right: 20px;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .reservation-button {
+    font-size: 16px;
+    right: 20px;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .reservation-button {
+    font-size: 14px;
+    right: 50px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .reservation-button {
+    font-size: 14px;
+    width: 110px !important;
+    height: 50px !important;
+    right: 15%;
+  }
+}
+
 .reservation-btn-icon {
   position: absolute;
-  transform: translate(-55px, -2px);
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1367px) {
+  .reservation-btn-icon {
+    transform: translate(-55px, -2px);
+  }
+}
+@media not all and (min-width: 1367px) {
+  .reservation-btn-icon {
+    transform: translate(-55px, -2px);
+  }
+}
+@media not all and (min-width: 600px) {
+  .reservation-btn-icon {
+    transform: translate(-45px, -2px);
+  }
 }
 
 /* ------------------------------*/
 .icon-container {
   position: absolute;
-  right: 12%;
+  /* PC-l 1367px~  */
+  /* 1367pxを含まずそれより小さい */
+  /* PC 1025~1366px */
+  /* 1367pxを含まずそれより小さい */
+  /* TAB 600~1024px */
+  /* 1367pxを含まずそれより小さい */
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1367px) {
+  .icon-container {
+    right: 12%;
+  }
+}
+@media not all and (min-width: 600px) {
+  .icon-container {
+    right: 45%;
+    top: 50px;
+    transform: scale(0.5, 0.5);
+  }
 }
 
 .teal-color {
   color: teal;
+}
+
+.source {
+  color: white;
 }
 
 /* フッター ------------------------------*/
@@ -760,12 +913,15 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .first-view {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 .l-fv-inner {
   position: static;
-  width: 1920px;
-  height: 1760px;
-  margin: 0 auto;
-  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -779,13 +935,54 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.l-fvーinner__img-container {
-  overflow: hidden;
-  width: 1920px;
-  height: 1079px;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
+@media not all and (min-width: 1367px) {
+  .l-fv-inner {
+    width: 1920px;
+    height: 1760px;
+    margin: 0 auto;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-fv-inner {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(170, 152, 152);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.parent {
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .parent {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.child {
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .child {
+    position: relative;
+    /* 中央寄せしたい要素の親タグにrelativeをつける */
+    overflow: hidden;
+    /* はみ出した部分は表示しないようにする */
+    height: 700px;
+    /* 高さは固定値を入れる */
+  }
+}
+
+.fv-img-sp {
+  width: 100%;
+  height: auto;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -795,9 +992,40 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.main-bg {
-  transform: scale(1.18, 1.18);
-  left: 147px;
+@media not all and (min-width: 1367px) {
+  .fv-img-sp {
+    display: none;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .fv-img-sp {
+    display: none;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .fv-img-sp {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media not all and (min-width: 600px) {
+  .fv-img-sp {
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* トップを基準に中央配置 */
+    left: 50%;
+    /* 左を基準に中央配置 */
+    width: auto;
+    height: 700px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fv-img-pc {
+  width: 100%;
+  height: auto;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -807,16 +1035,46 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.main-bng__right-txt {
+@media not all and (min-width: 1367px) {
+  .fv-img-pc {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .fv-img-pc {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .fv-img-pc {
+    display: none;
+  }
+}
+@media not all and (min-width: 600px) {
+  .fv-img-pc {
+    display: none;
+  }
+}
+
+.fv-catch-box {
+  width: 300px;
+  height: 400px;
   position: absolute;
-  top: 362px;
-  right: 508px;
-  writing-mode: vertical-rl;
-  font-size: 34px;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-bg__right-txt {
+  z-index: 999;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: bold;
   color: #ffffff;
-  letter-spacing: 7.7px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -826,16 +1084,33 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.main-bng__left-txt {
-  position: absolute;
-  top: 362px;
-  right: 593px;
-  writing-mode: vertical-rl;
-  font-size: 34px;
+@media not all and (min-width: 1025px) {
+  .main-bg__right-txt {
+    writing-mode: vertical-rl;
+    font-size: 28px;
+    letter-spacing: 7.7px;
+    top: 30%;
+    left: 65%;
+    transform: translate(-35%, -70%);
+  }
+}
+@media not all and (min-width: 600px) {
+  .main-bg__right-txt {
+    writing-mode: vertical-rl;
+    font-size: 28px;
+    letter-spacing: 7.7px;
+    top: 25%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 25, 25, 0.4);
+  }
+}
+
+.main-bg__left-txt {
+  z-index: 999;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: bold;
   color: #ffffff;
-  letter-spacing: 7.7px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -845,20 +1120,47 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1367px) {
+  .main-bg__left-txt {
+    writing-mode: vertical-rl;
+    font-size: 34px;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .main-bg__left-txt {
+    writing-mode: vertical-rl;
+    font-size: 34px;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .main-bg__left-txt {
+    writing-mode: vertical-rl;
+    font-size: 28px;
+    letter-spacing: 7.7px;
+    top: 30%;
+    left: 25%;
+    transform: translate(-75%, -70%);
+  }
+}
+@media not all and (min-width: 600px) {
+  .main-bg__left-txt {
+    writing-mode: vertical-rl;
+    font-size: 28px;
+    letter-spacing: 7.7px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 25, 25, 0.4);
+  }
+}
+
 .l-fvーinner__msg-container {
   position: relative;
-  width: 1920px;
-  height: 681px;
-  margin: 0 auto;
-  background-color: #f4b9bf;
-  display: flex;
-  flex-direction: row-reverse;
   font-size: 16px;
   font-family: "游明朝", "YuMincho", serif;
   font-weight: normal;
   color: #000000;
   letter-spacing: 8px;
-  writing-mode: vertical-rl;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -867,11 +1169,48 @@ ul {
   /* 1367pxを含まずそれより小さい */
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1367px) {
+  .l-fvーinner__msg-container {
+    display: flex;
+    flex-direction: row-reverse;
+    writing-mode: vertical-rl;
+    width: 1920px;
+    height: 681px;
+    margin: 0 auto;
+  }
+}
+@media not all and (min-width: 1367px) {
+  .l-fvーinner__msg-container {
+    width: 1920px;
+    height: 681px;
+    margin: 0 auto;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-fvーinner__msg-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.l-fvーinner__msg-container .child02 {
+  /* SP 375~599px */
+  /* 1367pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .l-fvーinner__msg-container .child02 {
+    position: relative;
+    /* 中央寄せしたい要素の親タグにrelativeをつける */
+    overflow: hidden;
+    /* はみ出した部分は表示しないようにする */
+    height: 800px;
+    /* 高さは固定値を入れる */
+  }
 }
 .l-fvーinner__msg-container .fv-msg-color {
-  display: block;
-  width: 1922px;
-  height: 681px;
+  width: 100%;
+  height: auto;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -881,9 +1220,40 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
-.l-fvーinner__msg-container span {
+@media not all and (min-width: 1025px) {
+  .l-fvーinner__msg-container .fv-msg-color {
+    width: 100%;
+    height: auto;
+  }
+}
+@media not all and (min-width: 600px) {
+  .l-fvーinner__msg-container .fv-msg-color {
+    position: absolute;
+    top: 50%;
+    /* トップを基準に中央配置 */
+    left: 50%;
+    /* 左を基準に中央配置 */
+    width: auto;
+    height: 800px;
+    transform: translate(-50%, -50%);
+  }
+}
+.l-fvーinner__msg-container .fv-msg-box {
+  height: 800px;
+  width: 100%;
   position: absolute;
-  text-orientation: upright;
+  z-index: 100;
+  top: 0px;
+}
+.l-fvーinner__msg-container .fv-msg-box-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.l-fvーinner__msg-container p {
+  writing-mode: horizontal-tb;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -893,11 +1263,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .l-fvーinner__msg-container p {
+    width: 95vw;
+    height: auto;
+  }
+}
+
 .fv-msg__line01 {
-  top: 64px;
-  right: 490px;
-  font-size: 24px;
-  letter-spacing: 19px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -907,11 +1280,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line01 {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+
 .fv-msg__line02 {
-  top: 151px;
-  right: 552px;
-  font-size: 24px;
-  letter-spacing: 24px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -921,10 +1297,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line02 {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+}
+
 .fv-msg__line03 {
-  top: 149px;
-  right: 695px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -934,10 +1314,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line03 {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line04 {
-  top: 149px;
-  right: 733px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -947,10 +1331,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line04 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line05 {
-  top: 149px;
-  right: 771px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -960,10 +1348,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line05 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line06 {
-  top: 149px;
-  right: 905px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -973,10 +1365,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line06 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line07 {
-  top: 149px;
-  right: 943px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -986,10 +1382,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line07 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line08 {
-  top: 149px;
-  right: 981px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -999,10 +1399,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line08 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line09 {
-  top: 149px;
-  right: 1115px;
-  letter-spacing: 8.7px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -1012,10 +1416,14 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line09 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line10 {
-  top: 149px;
-  right: 1153px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -1025,10 +1433,13 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line10 {
+    margin-top: 30px;
+  }
+}
+
 .fv-msg__line11 {
-  top: 149px;
-  right: 1191px;
-  letter-spacing: 6px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -1038,11 +1449,15 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line11 {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
 .fv-msg__line12 {
-  top: 443px;
-  right: 1327px;
-  font-size: 22px;
-  letter-spacing: 10px;
   /* PC-l 1367px~  */
   /* 1367pxを含まずそれより小さい */
   /* PC 1025~1366px */
@@ -1052,6 +1467,16 @@ ul {
   /* SP 375~599px */
   /* 1367pxを含まずそれより小さい */
 }
+@media not all and (min-width: 600px) {
+  .fv-msg__line12 {
+    margin-top: 30px;
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    right: 20px;
+  }
+}
+
 .l-feature {
   width: 1920px;
   height: 2063px;

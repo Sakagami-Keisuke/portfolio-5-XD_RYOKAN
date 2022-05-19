@@ -7,19 +7,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -31,22 +27,19 @@
     height: 1760px;
     margin: 0 auto;
 
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        width: 100vw;
+        height: auto;
     }
 }
 
@@ -54,154 +47,212 @@
 
 .l-fv-inner {
     position: static;
-    width: 1920px;
-    height: 1760px;
-    margin: 0 auto;
-
-    background-color: #000000;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        width: 1920px;
+        height: 1760px;
+        margin: 0 auto;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
+        width: 100vw;
+        height: 1500px;
 
+        background-color: rgb(170, 152, 152);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
 // ---------------------------------
 
-.l-fvーinner__img-container {
-    overflow: hidden;
-    width: 1920px;
-    height: 1079px;
-    margin: 0 auto;
-
-    display: flex;
-    position: relative;
-
-
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
+.parent {
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 
+.child {
+    /* SP 375~599px */
+    @include foundation_mixin.pc(600px) {
+        position: relative; /* 中央寄せしたい要素の親タグにrelativeをつける */
+        overflow: hidden; /* はみ出した部分は表示しないようにする */
+        height: 700px; /* 高さは固定値を入れる */
     }
 }
 
 // ---------------------------------
 
-.main-bg {
-    transform: scale(1.18, 1.18);
-    left: 147px;
-
+.fv-img-sp {
+    width: 100%;
+    height: auto;
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        display: none;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
+        display: none;
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
+        display: block;
+        width: 100%;
+        height: auto;
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
+        display: block;
 
+        position: absolute;
+        top: 50%; /* トップを基準に中央配置 */
+        left: 50%; /* 左を基準に中央配置 */
+        width: auto;
+        height: 700px; //高さ設定
+        transform: translate(-50%, -50%);
     }
 }
 
 // ---------------------------------
 
-.main-bng__right-txt {
+.fv-img-pc {
+    width: 100%;
+    height: auto;
+
+    /* PC-l 1367px~  */
+    @include foundation_mixin.pc(1367px) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /* PC 1025~1366px */
+    @include foundation_mixin.pc(1367px) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /* TAB 600~1024px */
+    @include foundation_mixin.pc(1025px) {
+        display: none;
+    }
+    /* SP 375~599px */
+    @include foundation_mixin.pc(600px) {
+        display: none;
+    }
+}
+
+// ---------------------------------
+
+.fv-catch-box {
+    width: 300px;
+    height: 400px;
+
     position: absolute;
-    top: 362px;
-    right: 508px;
+    z-index: 100;
 
-    writing-mode: vertical-rl;
-    font-size: 34px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// ---------------------------------
+
+.main-bg__right-txt {
+    z-index: 999;
+
     font-family: "游明朝", "YuMincho", serif;
     font-weight: bold;
     color: #ffffff;
-    letter-spacing: 7.7px;
-
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
+        writing-mode: vertical-rl;
+        font-size: 28px;
+        letter-spacing: 7.7px;
 
+        top: 30%;
+        left: 65%;
+        transform: translate(-35%, -70%);
     }
+
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
+        writing-mode: vertical-rl;
+        font-size: 28px;
+        letter-spacing: 7.7px;
 
+        top: 25%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+
+        background-color: rgb(25, 25, 25, 0.4);
     }
 }
 
 // ---------------------------------
 
-.main-bng__left-txt {
-    position: absolute;
-    top: 362px;
-    right: 593px;
+.main-bg__left-txt {
+    z-index: 999;
 
-    writing-mode: vertical-rl;
-    font-size: 34px;
     font-family: "游明朝", "YuMincho", serif;
     font-weight: bold;
     color: #ffffff;
-    letter-spacing: 7.7px;
-
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        writing-mode: vertical-rl;
+        font-size: 34px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
+        writing-mode: vertical-rl;
+        font-size: 34px;
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
+        writing-mode: vertical-rl;
+        font-size: 28px;
+        letter-spacing: 7.7px;
 
+        top: 30%;
+        left: 25%;
+        transform: translate(-75%, -70%);
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
+        writing-mode: vertical-rl;
+        font-size: 28px;
+        letter-spacing: 7.7px;
 
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+
+        background-color: rgb(25, 25, 25, 0.4);
     }
 }
 
@@ -209,363 +260,356 @@
 
 .l-fvーinner__msg-container {
     position: relative;
-    width: 1920px;
-    height: 681px;
-    margin: 0 auto;
-    background-color: #f4b9bf;
-
-    display: flex;
-    flex-direction: row-reverse;
-
+    
     font-size: 16px;
     font-family: "游明朝", "YuMincho", serif;
     font-weight: normal;
     color: #000000;
     letter-spacing: 8px;
-    writing-mode: vertical-rl;
-
-
+    
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        display: flex;
+        flex-direction: row-reverse;
+        writing-mode: vertical-rl;
+        width: 1920px;
+        height: 681px;
+        margin: 0 auto;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
+        width: 1920px;
+        height: 681px;
+        margin: 0 auto;
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
+
+    // ---------------------------------
+
+    .child02 {
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+            position: relative; /* 中央寄せしたい要素の親タグにrelativeをつける */
+            overflow: hidden; /* はみ出した部分は表示しないようにする */
+            height: 800px; /* 高さは固定値を入れる */
+        }
+    }
+
+    // ---------------------------------
 
     //背景
     .fv-msg-color {
-        display: block;
-        //なぜかずれる
-        width: 1922px;
-        height: 681px;
+        width: 100%;
+        height: auto;
 
-
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+            width: 100%;
+            height: auto;
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+            position: absolute;
+            top: 50%; /* トップを基準に中央配置 */
+            left: 50%; /* 左を基準に中央配置 */
+            width: auto;
+            height: 800px; //高さ設定
+            transform: translate(-50%, -50%);
+        }
     }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
 
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
+    // ---------------------------------
 
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
+    .fv-msg-box {
+        height: 800px;
+        width: 100%;
 
-    }
-    }
-
-    span {
         position: absolute;
-        text-orientation: upright;
-
-
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
+        z-index: 100;
+        top: 0px;
 
     }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
 
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
+    // ---------------------------------
 
+    .fv-msg-box-flex {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
+
+    p {
+        writing-mode: horizontal-tb;
+
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+            width: 95vw;
+            height: auto;
+        }
     }
 }
 
 .fv-msg__line01 {
-    top: 64px;
-    right: 490px;
-    font-size: 24px;
-    letter-spacing: 19px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 64px;
+        // right: 490px;
+        // font-size: 24px;
+        // letter-spacing: 19px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 50px;
+        font-size: 24px;
     }
 }
 .fv-msg__line02 {
-    top: 151px;
-    right: 552px;
-    font-size: 24px;
-    letter-spacing: 24px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 151px;
+        // right: 552px;
+        // font-size: 24px;
+        // letter-spacing: 24px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 40px;
+        font-size: 24px;
     }
 }
 .fv-msg__line03 {
-    top: 149px;
-    right: 695px;
-    letter-spacing: 6px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 695px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 60px;
+        font-size: 16px;
     }
 }
 .fv-msg__line04 {
-    top: 149px;
-    right: 733px;
-    letter-spacing: 6px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // right: 733px;
+        // top: 149px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
+        font-size: 16px;
     }
 }
 .fv-msg__line05 {
-    top: 149px;
-    right: 771px;
-    letter-spacing: 6px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 771px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
+        font-size: 16px;
     }
 }
 .fv-msg__line06 {
-    top: 149px;
-    right: 905px;
-    letter-spacing: 6px;
-
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 905px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 50px;
+        font-size: 16px;
     }
 }
 .fv-msg__line07 {
-    top: 149px;
-    right: 943px;
-    letter-spacing: 6px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        //     top: 149px;
+        //     right: 943px;
+        //     letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
+        font-size: 16px;
     }
 }
 .fv-msg__line08 {
-    top: 149px;
-    right: 981px;
-    letter-spacing: 6px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 981px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
+        font-size: 16px;
     }
 }
 .fv-msg__line09 {
-    top: 149px;
-    right: 1115px;
-    letter-spacing: 8.7px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 1115px;
+        // letter-spacing: 8.7px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 50px;
+        font-size: 16px;
     }
 }
 .fv-msg__line10 {
-    top: 149px;
-    right: 1153px;
-    
-    letter-spacing: 6px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 1153px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
     }
 }
 
 .fv-msg__line11 {
-    top: 149px;
-    right: 1191px;
-    letter-spacing: 6px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 149px;
+        // right: 1191px;
+        // letter-spacing: 6px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        display: inline-block;
+        margin-top: 30px;
+        // top:470px;
+        font-size: 16px;
     }
 }
 
 .fv-msg__line12 {
-    top: 443px;
-    right: 1327px;
-    font-size: 22px;
-    letter-spacing: 10px;
-
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
+        // top: 443px;
+        // right: 1327px;
+        // font-size: 22px;
+        // letter-spacing: 10px;
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
+        margin-top: 30px;
+        font-size: 20px;
+        display: block;
+        text-align: right;
+        right: 20px;
     }
 }
 // ------ section 1 first view---------------------------
@@ -579,19 +623,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -611,19 +651,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -639,19 +675,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     // ---------------------------------
@@ -661,22 +693,18 @@
         width: 1050px; /* トリミングしたい枠の幅 */
         height: 10％; /* トリミングしたい枠の高さ */
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         // ---------------------------------
 
@@ -685,22 +713,18 @@
             height: auto;
             transform: translate(0%, -11%); //ずらし
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
     // ---------------------------------
@@ -713,22 +737,18 @@
         flex-direction: column;
         justify-content: flex-start;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
         // ---------------------------------
 
         .feature-txt-strong01 {
@@ -743,22 +763,18 @@
             padding-top: 21px;
             padding-left: 137px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .feature-txt01 {
@@ -772,43 +788,35 @@
             padding-top: 55px;
             padding-left: 137px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
 
         .page-junp-btn01 {
             margin-top: 65px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
 }
@@ -826,19 +834,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     // ---------------------------------
@@ -847,44 +851,36 @@
         width: 1050px; /* トリミングしたい枠の幅 */
         height: 10％; /* トリミングしたい枠の高さ */
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         .feature-img02 {
             width: 100%;
             height: auto;
             transform: translate(0%, -11%); //ずらし
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
     // ---------------------------------
@@ -896,22 +892,18 @@
         flex-direction: column;
         justify-content: flex-start;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         // ---------------------------------
         .feature-txt-strong02 {
@@ -926,22 +918,18 @@
             padding-top: 41px;
             padding-left: 409px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .feature-txt02 {
@@ -955,44 +943,36 @@
             padding-top: 55px;
             padding-left: 408px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
 
         .page-junp-btn02 {
             margin-top: 35px;
             margin-left: 408px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
 }
@@ -1010,19 +990,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
     // ---------------------------------
 
@@ -1031,44 +1007,36 @@
         width: 1050px; /* トリミングしたい枠の幅 */
         height: 10％; /* トリミングしたい枠の高さ */
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         .feature-img03 {
             width: 100%;
             height: auto;
             transform: translate(0%, -9.5%); //ずらし
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
     // ---------------------------------
@@ -1080,22 +1048,18 @@
         flex-direction: column;
         justify-content: flex-start;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
         // ---------------------------------
         .feature-txt-strong03 {
             font-family: "游明朝", "YuMincho", serif;
@@ -1109,22 +1073,18 @@
             padding-top: 22px;
             padding-left: 137px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .feature-txt03 {
@@ -1138,43 +1098,35 @@
             padding-top: 54px;
             padding-left: 137px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
 
         .page-junp-btn03 {
             margin-top: 65px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
 }
@@ -1186,19 +1138,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 // ---------------------------------
@@ -1208,19 +1156,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 // ---------------------------------
@@ -1230,19 +1174,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1257,19 +1197,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 // ---------------------------------
@@ -1288,19 +1224,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1313,41 +1245,33 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     .plan-logo-img {
         width: 100%;
         height: auto;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
     }
 }
 // ---------------------------------
@@ -1361,19 +1285,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1382,19 +1302,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1409,19 +1325,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1433,19 +1345,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1456,19 +1364,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 // ---------------------------------
@@ -1480,19 +1384,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     .l-card-item__img {
@@ -1500,22 +1400,18 @@
         height: auto;
         transform: translate(0%, -3%); //ずらし
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
     }
 }
 // ---------------------------------
@@ -1523,23 +1419,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1557,19 +1448,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1588,19 +1475,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1617,19 +1500,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 // ------ section 3  plan   ---------------------------
@@ -1643,19 +1522,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1670,22 +1545,17 @@
     justify-content: flex-start;
     align-items: center;
 
-   
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1695,19 +1565,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1717,19 +1583,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1739,41 +1601,33 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     .notice-nav-ul {
         display: flex;
         flex-direction: row;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         // ---------------------------------
         .notice-nav-item {
@@ -1785,66 +1639,54 @@
             display: flex;
             list-style: none;
 
-            cursor:pointer;
+            cursor: pointer;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .notice-nav-item:first-child {
             transform: translateX(-38px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .notice-nav-item:last-child {
             transform: translateX(17px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .notice-nav-item a {
@@ -1853,22 +1695,18 @@
             color: #000000;
             text-decoration: none;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .notice-nav-item a:hover {
@@ -1903,23 +1741,18 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: flex-end;
-   
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -1929,23 +1762,20 @@
 // ---------------------------------
 
 // タブ
-.panel{
-    display:none;
+.panel {
+    display: none;
 }
-.tab.is-active{
+.tab.is-active {
     text-decoration: underline;
     transition: all 0.2s ease-out;
-  }
-  .panel.is-show{
-    display:block;
-  }
+}
+.panel.is-show {
+    display: block;
+}
 
 // ---------------------------------
 
-
 // ---------------------------------
-
-
 
 .ln-card-item {
     width: 570px;
@@ -1962,19 +1792,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     // ---------------------------------
@@ -1983,48 +1809,40 @@
         width: 105px;
         height: 125px;
 
-        transform: translate(10px,15px);
+        transform: translate(10px, 15px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         // ---------------------------------
         .ln-card-item__img {
             width: 100%;
             height: auto;
             transform: scale(160%, 160%);
-            top:10px;
+            top: 10px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
 
@@ -2040,22 +1858,18 @@
 
         margin-left: 30px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         // ---------------------------------
         .ln-card__date {
@@ -2069,22 +1883,18 @@
 
             transform: translateX(8px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
         // ---------------------------------
         .card-item-txt {
@@ -2099,22 +1909,18 @@
             padding-top: 0px;
             transform: translateX(10px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
         }
     }
 }
@@ -2124,19 +1930,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 .ln-c-item05 {
@@ -2144,19 +1946,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 .ln-c-item06 {
@@ -2164,19 +1962,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -2187,22 +1981,18 @@
     width: 1920px;
     height: 1395px;
     margin: 0 auto;
-  
+
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -2222,19 +2012,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -2244,19 +2030,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -2264,22 +2046,18 @@
 
 .access-hedeingl2 {
     margin-top: 20px;
-    
+
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 }
 
@@ -2295,19 +2073,15 @@
 
     /* PC-l 1367px~  */
     @include foundation_mixin.pc(1367px) {
-    
     }
     /* PC 1025~1366px */
     @include foundation_mixin.pc(1367px) {
-
     }
     /* TAB 600~1024px */
     @include foundation_mixin.pc(1025px) {
-
     }
     /* SP 375~599px */
     @include foundation_mixin.pc(600px) {
-
     }
 
     // ---------------------------------
@@ -2315,32 +2089,28 @@
     .l-access-detail-box01 {
         width: 100%;
         height: 370px;
-   
-        transform:translateY(64px);
+
+        transform: translateY(64px);
 
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
-
-            // ---------------------------------
+        // ---------------------------------
 
         .l-access-detail__img-box {
             overflow: hidden;
@@ -2348,36 +2118,30 @@
             height: 370px;
 
             display: flex;
-            transform: scale(1.18,1);
+            transform: scale(1.18, 1);
             margin-left: 170px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
 
             .access-logo-img {
-       
-
             }
         }
 
         // ---------------------------------
 
         .l-access_txt-box {
-transform: translateX(20px);
+            transform: translateX(20px);
 
             display: flex;
             flex-direction: column;
@@ -2392,22 +2156,18 @@ transform: translateX(20px);
             letter-spacing: -0.5px;
             line-height: 1.2;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
 
             // ---------------------------------
 
@@ -2415,151 +2175,123 @@ transform: translateX(20px);
                 font-weight: bold;
                 padding-top: 20px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt02 {
                 padding-top: 12px;
                 line-height: 2;
                 letter-spacing: 0px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt03 {
                 padding-top: 14px;
                 font-weight: bold;
                 letter-spacing: 0.3px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt04 {
                 padding-top: 22px;
                 letter-spacing: 0px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt05 {
                 padding-top: 20px;
                 font-weight: bold;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt06 {
                 padding-top: 20px;
                 letter-spacing: 0px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
             .access_txt07 {
                 padding-top: 14px;
                 line-height: 2;
                 letter-spacing: 0px;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+                /* PC-l 1367px~  */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* PC 1025~1366px */
+                @include foundation_mixin.pc(1367px) {
+                }
+                /* TAB 600~1024px */
+                @include foundation_mixin.pc(1025px) {
+                }
+                /* SP 375~599px */
+                @include foundation_mixin.pc(600px) {
+                }
             }
         }
     }
@@ -2575,45 +2307,37 @@ transform: translateX(20px);
         justify-content: center;
         align-items: flex-start;
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+        /* PC-l 1367px~  */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* PC 1025~1366px */
+        @include foundation_mixin.pc(1367px) {
+        }
+        /* TAB 600~1024px */
+        @include foundation_mixin.pc(1025px) {
+        }
+        /* SP 375~599px */
+        @include foundation_mixin.pc(600px) {
+        }
 
         .access-map__img-box {
             width: 792px;
             height: 592px;
 
-            transform: translate(-5px,65px);
+            transform: translate(-5px, 65px);
 
-    /* PC-l 1367px~  */
-    @include foundation_mixin.pc(1367px) {
-    
-    }
-    /* PC 1025~1366px */
-    @include foundation_mixin.pc(1367px) {
-
-    }
-    /* TAB 600~1024px */
-    @include foundation_mixin.pc(1025px) {
-
-    }
-    /* SP 375~599px */
-    @include foundation_mixin.pc(600px) {
-
-    }
+            /* PC-l 1367px~  */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* PC 1025~1366px */
+            @include foundation_mixin.pc(1367px) {
+            }
+            /* TAB 600~1024px */
+            @include foundation_mixin.pc(1025px) {
+            }
+            /* SP 375~599px */
+            @include foundation_mixin.pc(600px) {
+            }
 
             .access-map__img {
                 width: 100%;
